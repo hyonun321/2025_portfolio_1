@@ -1,7 +1,19 @@
 {
-  "devDependencies": {
+  "name": "2025_portfolio_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm --filter client dev",
+    "build": "pnpm --filter client build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
     "eslint": "^9.18.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "^10.0.1",
     "prettier": "^3.4.2"
   }
 }
