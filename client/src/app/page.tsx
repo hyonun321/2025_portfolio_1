@@ -1,8 +1,13 @@
-import "./globals.css";
+import HeroSection from "@/components/sections/HeroSection";
+import ProjectsSection from "@/components/sections/ProjectsSection";
+import IntroductionSection from "@/components/sections/IntroductionSection";
+
 export default function HomePage() {
   return (
-    <main>
-      <h1>환영합니다 김현훈입니다.</h1>
+    <main className="bg-red-400">
+      <HeroSection />
+      <ProjectsSection />
+      <IntroductionSection />
     </main>
   );
 }

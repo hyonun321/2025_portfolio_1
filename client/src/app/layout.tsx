@@ -1,4 +1,8 @@
-// app/layout.tsx
+// src/app/layout.tsx
+import Navbar from "@/components/Navigation/Navbar";
+import Footer from "@/components/Footer/Footer";
+import "./globals.css";
+
 export default function RootLayout({
   children,
 }: {
@@ -7,9 +11,13 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <nav>{/* 네비게이션 바 */}</nav>
-        {children}
-        <footer>{/* 푸터 */}</footer>
+        <Navbar />
+        <main className="min-h-screen pt-16">
+          {" "}
+          {/* navbar의 높이만큼 상단 여백 */}
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
