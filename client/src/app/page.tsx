@@ -1,6 +1,7 @@
 import HeroSection from "@/components/sections/HeroSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import IntroductionSection from "@/components/sections/IntroductionSection";
+import SpaceBackground from "@/components/common/SpaceBackground";
 
 export default function HomePage() {
   return (
@@ -8,6 +9,7 @@ export default function HomePage() {
       <HeroSection />
       <ProjectsSection />
       <IntroductionSection />
+      <SpaceBackground />
     </main>
   );
 }
