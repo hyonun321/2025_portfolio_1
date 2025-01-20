@@ -35,8 +35,8 @@ export default function SpeakerBackground() {
   }, []);
 
   return (
-    <div className="absolute z-10 inset-0 w-full h-full overflow-hidden">
-      <video ref={videoRef} autoPlay muted loop playsInline>
+    <div className=" z-10 inset-0 w-full h-fit">
+      <video ref={videoRef} autoPlay muted loop playsInline width="100%">
         <source src="/videos/speaker_background.webm" type="video/webm" />
         <source src="/videos/speaker_background.mp4" type="video/mp4" />
       </video>

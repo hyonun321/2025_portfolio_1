@@ -35,12 +35,12 @@ export default function NoctaBackground() {
   }, []);
 
   return (
-    <div className="absolute z-10 inset-0 w-full h-full overflow-hidden">
-      <video ref={videoRef} autoPlay muted loop playsInline>
+    <div className=" z-10 inset-0 w-full h-fit">
+      <video ref={videoRef} autoPlay muted loop playsInline width="100%">
         <source src="/videos/nocta_background.webm" type="video/webm" />
         <source src="/videos/nocta_background.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 h-full bg-black/60" />
+      <div className="absolute inset-0 bg-black/60" />
     </div>
   );
 }
