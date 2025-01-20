@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-const ScrollIndicator = () => {
+export default function ScrollIndicator() {
   const indicatorRef = useRef(null);
   const dotRef = useRef(null);
 
@@ -32,7 +32,7 @@ const ScrollIndicator = () => {
   return (
     <div
       ref={indicatorRef}
-      className="absolute bottom-10 text-white flex flex-col items-center"
+      className="z-20 absolute bottom-10 text-white flex flex-col items-center"
     >
       <div className="w-6 h-10 border-2 border-white rounded-full mb-2 flex justify-center">
         <div ref={dotRef} className="w-1 h-2 bg-white rounded-full mt-2" />
@@ -40,6 +40,4 @@ const ScrollIndicator = () => {
       <span className="text-sm text-gray-400">Scroll Down</span>
     </div>
   );
-};
-
-export default ScrollIndicator;
+}
