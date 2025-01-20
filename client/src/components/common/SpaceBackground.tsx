@@ -2,10 +2,9 @@
 
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import gsap from "gsap";
 
 const SpaceBackground = () => {
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const mouseRef = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -142,7 +141,7 @@ const SpaceBackground = () => {
     scene.add(points);
 
     // 마우스 이벤트 처리
-    const handleMouseMove = (event) => {
+    const handleMouseMove = (event: MouseEvent) => {
       mouseRef.current = {
         x: (event.clientX / window.innerWidth) * 2 - 1,
         y: -(event.clientY / window.innerHeight) * 2 + 1,
