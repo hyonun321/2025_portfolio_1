@@ -109,8 +109,8 @@ const SpaceBackground = () => {
 
       // 거리에 따른 색상 변화
       const distance = radius / 40;
-      const hue = 0.6 + distance * 0.1;
-      const color = new THREE.Color().setHSL(hue, 0.8, 0.8);
+      const lightness = 0.3 + distance * 0.2;
+      const color = new THREE.Color().setHSL(0, 0, lightness);
 
       colors[i3] = color.r;
       colors[i3 + 1] = color.g;
@@ -194,8 +194,7 @@ const SpaceBackground = () => {
   return (
     <div
       ref={containerRef}
-      className="fixed top-0 left-0 w-full h-full"
-      style={{ background: "#1a191d" }}
+      className="fixed top-0 left-0 w-full h-full bg-zinc-800"
     />
   );
 };
