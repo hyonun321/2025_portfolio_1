@@ -24,14 +24,23 @@ export default function IntroductionSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="project-card bg-white rounded-2xl shadow-lg p-8 transform transition-all">
-            <h3 className="text-2xl font-semibold mb-4">프로젝트 1</h3>
-            <p className="text-gray-600">프로젝트 설명이 들어갑니다.</p>
-          </div>
-          {/* 더 많은 프로젝트 카드들... */}
+    <section
+      ref={sectionRef}
+      className="flex relative min-h-screen min-w-full justify-center mb-10"
+    >
+      <div className="absolute z-10 container mx-auto px-4 py-20">
+        <div
+          ref={projectCardRef}
+          className="project-card backdrop-blur-m rounded-2xl p-8 transform"
+        >
+          <h3 className="flex text-5xl font-semibold mb-4 text-white justify-center items-center">
+            Frontend <br />
+            움직이는 애니메이션에 프로그래스바 추가
+          </h3>
+          <span className="flex flex-col border-x rounded-2xl">
+            <MeProfileImage />
+            <SkillCards />
+          </span>
         </div>
       </div>
     </section>
