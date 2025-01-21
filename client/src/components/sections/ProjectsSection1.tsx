@@ -3,9 +3,8 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import SpeakerBackground from "../Background/noctaBackground";
+import SpeakerBackground from "./components/SpeakerBackground";
 
-// Register ScrollTrigger once at the top level
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ProjectsSection1() {
@@ -13,18 +12,17 @@ export default function ProjectsSection1() {
   const projectCardRef = useRef(null);
 
   useEffect(() => {
-    // Create the animation configuration
     const config = {
       scrollTrigger: {
         trigger: sectionRef.current,
         start: "top center",
-        end: "center center",
+        end: "40% center",
         scrub: 1,
         markers: true,
         toggleActions: "play none none reverse",
       },
       opacity: 1,
-      y: 0,
+      x: 0,
       duration: 1,
     };
 
@@ -33,7 +31,7 @@ export default function ProjectsSection1() {
       {
         // Starting state
         opacity: 0,
-        y: 100,
+        x: -500,
         scale: 0.9,
       },
       {
@@ -48,7 +46,10 @@ export default function ProjectsSection1() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="flex relative min-h-screen">
+    <section
+      ref={sectionRef}
+      className="flex relative min-h-screen justify-center"
+    >
       <SpeakerBackground />
       <div className="absolute z-10 container mx-auto px-4 py-20">
         <div
