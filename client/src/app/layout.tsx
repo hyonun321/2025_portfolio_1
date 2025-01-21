@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navigation/Navbar";
 import Footer from "@/components/Footer/Footer";
 import "./globals.css";
+import "../../public/fonts/font.css";
 
 export default function RootLayout({
   children,
@@ -10,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body>
+      <body className="font-Poppins">
         <Navbar />
         <main className="min-h-screen pt-16">
           {" "}
