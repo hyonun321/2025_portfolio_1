@@ -6,7 +6,7 @@ import ProjectsSection2 from "@/components/sections/ProjectsSection2";
 
 export default function HomePage() {
   return (
-    <main className="bg-red-400">
+    <main className="bg-zinc-800 flex justify-center flex-col">
       <HeroSection />
       <IntroductionSection />
       <ProjectsSection2 />
