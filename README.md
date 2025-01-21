@@ -17,7 +17,11 @@
 ### Css
 
 - `TailwindCSS`
+
   - className기반의 CSS 도구를 활용해 보기 위해
+
+- `SCSS`
+  - mixin 등의 문법 및 가독성과 재사용성을 위해
 
 ### Animation
 
