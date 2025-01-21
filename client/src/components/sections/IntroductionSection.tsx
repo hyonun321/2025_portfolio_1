@@ -1,26 +1,51 @@
 "use client";
-import { useRef, useEffect } from "react";
+
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import SkillCards from "./components/SkillCards";
+import MeProfileImage from "./components/MeProfileImage";
+
+// Register ScrollTrigger once at the top level
+gsap.registerPlugin(ScrollTrigger);
 
 export default function IntroductionSection() {
   const sectionRef = useRef(null);
+  const projectCardRef = useRef(null);
 
   useEffect(() => {
-    const projects = gsap.utils.toArray(".project-card");
+    // Create the animation configuration
+    const config = {
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top center",
+        end: "45% center",
+        scrub: 1,
+        markers: true,
+        toggleActions: "play none none reverse",
+      },
+      opacity: 1,
+      y: 0,
+      duration: 1,
+    };
 
-    projects.forEach((project) => {
-      gsap.from(project, {
-        scrollTrigger: {
-          trigger: project,
-          start: "top 80%",
-          end: "top 20%",
-          scrub: 1,
-        },
+    gsap.fromTo(
+      projectCardRef.current,
+      {
+        // Starting state
         opacity: 0,
         y: 100,
         scale: 0.9,
-      });
-    });
+      },
+      {
+        ...config,
+        scale: 1,
+      }
+    );
+
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
   }, []);
 
   return (
