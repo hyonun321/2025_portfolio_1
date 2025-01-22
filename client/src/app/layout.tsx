@@ -12,13 +12,14 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className="font-Poppins">
-        <Navbar />
+        {/* <Navbar /> */}
         <main className="min-h-screen pt-16">
           {" "}
           {/* navbar의 높이만큼 상단 여백 */}
           {children}
         </main>
         <Footer />
+        {/* <div className=" h-full w-full inset-0 bg-gradient-to-b from-transparent to-slate-900 z-30" /> */}
       </body>
     </html>
   );
