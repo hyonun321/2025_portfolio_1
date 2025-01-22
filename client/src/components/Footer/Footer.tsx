@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-8">
-      <div className="container mx-auto px-4">
-        <p>© 2024 김현훈. All rights reserved.</p>
+    <footer className="flex absolute w-full bg-zinc-800  py-8 z-30 ">
+      <div className="flex container mx-auto px-4 justify-center text-white/80 items-center">
+        <p>© 2025 HYONUN. All rights reserved.</p>
       </div>
     </footer>
   );

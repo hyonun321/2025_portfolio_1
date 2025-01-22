@@ -36,7 +36,6 @@ const HeroSection = () => {
 
   return (
     <section className="relative h-screen bg-slate-900 flex flex-col items-center justify-center overflow-hidden">
-      {/* 메인 텍스트 */}
       <div className="text-center z-10">
         <h1
           ref={nameRef}
@@ -49,11 +48,7 @@ const HeroSection = () => {
         </p>
       </div>
 
-      {/* 스크롤 인디케이터 컴포넌트 */}
       <ScrollIndicator />
-
-      {/* 배경 그라데이션 */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900/50" />
     </section>
   );
 };

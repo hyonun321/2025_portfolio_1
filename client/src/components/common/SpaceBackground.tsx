@@ -194,8 +194,7 @@ const SpaceBackground = () => {
   return (
     <div
       ref={containerRef}
-      className="fixed top-0 left-0 w-full h-full"
-      style={{ background: "#1a191d" }}
+      className="fixed top-0 left-0 w-full h-full bg-zinc-800"
     />
   );
 };
