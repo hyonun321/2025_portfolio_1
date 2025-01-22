@@ -1,4 +1,4 @@
-import VideoBackground from "../../common/VideoBackground";
+import VideoBackground from "@/components/common/VideoBackground";
 
 export default function SpeakerBackground() {
   return (
