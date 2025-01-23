@@ -105,7 +105,7 @@ export default function ProjectsSection1() {
       <div className="max-w-screen mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         <ProjectVideo
           videoRef={videoContainerRef}
-          videoUrl="/videos/nocta_background.mp4"
+          videoUrl="videos/nocta_background.mp4"
         />
 
         <div ref={contentRef} className="space-y-32 py-20 px-4">

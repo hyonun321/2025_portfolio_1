@@ -20,14 +20,14 @@ const PROJECTS: Project[] = [
     id: 1,
     title: "실시간 동시편집 에디터 Nocta",
     technologies: ["React"],
-    image: "/images/nocta_inform.jpg",
+    image: "images/nocta_inform.jpg",
     description: "React / Typescript / Vite / PandaCSS / Zustand ",
   },
   {
     id: 2,
     title: "얼굴 추적 지향성 스피커",
     technologies: ["Python"],
-    image: "/images/speaker.jpg",
+    image: "images/speaker.jpg",
     description: "Python / Raspberry Pi / OpenCV / Haarcascade",
   },
 ];
