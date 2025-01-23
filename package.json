@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "pnpm --filter client dev",
-    "build": "pnpm --filter client build"
+    "build": "pnpm --filter client build",
+    "deploy": "pnpm --filter client deploy"
   },
   "keywords": [],
   "author": "",
