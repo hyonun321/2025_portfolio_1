@@ -10,7 +10,7 @@ import { ProblemSolvingSection } from "./components/ProblemSolvingSection";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ProjectSection1() {
-  // Creating refs for our different elements
+  const titleRef = useRef<HTMLDivElement>(null); 
   const sectionRef = useRef<HTMLDivElement>(null);
   const videoContainerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -43,13 +43,22 @@ export default function ProjectSection1() {
     },
   };
   useEffect(() => {
-    if (!sectionRef.current || !videoContainerRef.current || !contentRef.current) return;
-  
-    // 비디오 핀 설정
+    if (!sectionRef.current || !videoContainerRef.current || !contentRef.current || !titleRef.current) return;
+
+    // 타이틀 pin 설정
+    const titlePinTrigger = ScrollTrigger.create({
+      trigger: titleRef.current,
+      start: "top top",
+      endTrigger: contentRef.current, // content 영역이 끝날 때까지
+      end: "bottom top",
+      pin: true,
+      pinSpacing: false,
+    });
     const pinTrigger = ScrollTrigger.create({
       trigger: videoContainerRef.current,
-      start: "top 20%",
-      end: "bottom bottom",
+      start: "top",
+      // contentRef의 끝까지 pin이 유지되도록 설정
+      end: () => `+=${contentRef.current?.offsetHeight || 0}px`,
       pin: true,
       pinSpacing: true,
     });
@@ -62,8 +71,8 @@ export default function ProjectSection1() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: card,
-          start: "top 80%", // 카드가 화면 하단 80% 지점에 도달하면 시작
-          end: "bottom 20%", // 카드가 화면 상단 20% 지점에 도달하면 종료
+          start: "top 60%", // 카드가 화면 하단 80% 지점에 도달하면 시작
+          end: "top 20%", // 카드가 화면 상단 20% 지점에 도달하면 종료
           toggleActions: "play reverse play reverse", // 스크롤 올리고 내릴 때 모두 애니메이션 적용
           scrub: 1, // 부드러운 스크롤 효과
         }
@@ -92,6 +101,7 @@ export default function ProjectSection1() {
   
     return () => {
       pinTrigger.kill();
+      titlePinTrigger.kill();
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
   }, []);
@@ -101,16 +111,22 @@ export default function ProjectSection1() {
       ref={sectionRef}
       className="min-h-screen relative z-10 pt-10"
     >
-      <h1 className="flex items-center justify-center text-5xl font-bold tracking-tight text-white mb-4">
-        실시간 동시편집 에디터 Nocta
-      </h1>
+      <div 
+        ref={titleRef} 
+        className="w-full backdrop-blur-sm py-4 z-20"
+      >
+        <h1 className="flex items-center justify-center text-5xl font-bold tracking-tight text-white">
+          실시간 동시편집 에디터 Nocta
+        </h1>
+      </div>
       <div className="max-w-screen mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        
         <ProjectVideo
           videoRef={videoContainerRef}
           videoUrl="/videos/nocta_background.mp4"
         />
 
-        <div ref={contentRef} className="space-y-[50vh] py-20 px-4">
+        <div ref={contentRef} className="space-y-[70vh] py-20 px-4">
           <RoleSection roles={projectData.roles} />
           <TechnicalSection experiences={projectData.technicalExperiences} />
           <ProblemSolvingSection {...projectData.problemSolving} />
