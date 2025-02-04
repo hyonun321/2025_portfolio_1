@@ -20,10 +20,12 @@ export default function ProjectSection1() {
 
   const projectData = {
     roles: [
-      "CRDT 라이브러리 설계 및 실시간 동시편집 시스템 구현 리드",
-      "워크스페이스 실시간 상호작용 및 권한 관리 기능 개발",
-      "Vite와 pnpm 기반의 모노레포 환경을 구축, @noctaCRDT 라이브러리를 설계 후 구현",
-      "onBoardingScreen UI Lottie 애니메이션을 활용한 인터랙티브 UI/UX 컴포넌트 설계와 구현",
+      "CRDT 라이브러리 설계",
+      "실시간 동시편집 시스템 구현 리드",
+      "socket.io 유저별 워크스페이스 구현",
+      "onBoardingScreen 구현",
+      "로티 애니메이션 아이콘 제작",
+      "기술 시연 영상 제작",
     ],
     technicalExperiences: [
       {
@@ -31,16 +33,16 @@ export default function ProjectSection1() {
         points: [
           "RGA 기반 이중 링크드리스트로 CRDT 설계 및 블록 단위 분리, 구조 도입",
           "EditorCRDT와 BlockCRDT 알고리즘을 통한 모듈화로 유지보수성 강화",
-          "블록 단위 동기화 방식 도입으로 대규모 문서 처리 시 확장성 확보",
+          "블록 단위 동기화 방식으로 블록 타입 확장성 증가",
         ],
       },
     ],
     problemSolving: {
-      problem: "다수 사용자의 동시 편집 시 과도한 소켓 통신으로 인한 서버 부하 발생",
-      solution: "사용자 입력 패턴 분석 (평균 0.5초당 3회 타이핑) 기반 배치 처리 도입",
+      problem: "과도한 리렌더링 발생으로 성능 부하 발생",
+      solution: "React.memo 및 DocumentFragment 도입",
       results: [
-        "초당 소켓 통신량 70% 감소로 서버 리소스 효율화",
-        "네트워크 대역폭 사용량 최적화로 안정적인 동기화 성능 확보",
+        "기존대비 55% 렌더링 시간 감소",
+        "리스트 가상화를 통한 리플로우 발생시 렌더 개수 최적화",
       ],
     },
   };
@@ -101,13 +103,13 @@ export default function ProjectSection1() {
     // 프러블럼 섹션: 1초 fade in → 2초 유지 → 1초 fade out  
     masterTL
       .to(roleRef.current, { opacity: 1, y: window.innerHeight/3, duration: 1, ease: "power1.out" })
-      .to({}, { duration: 2 })
+      .to({}, { duration: 1 })
       .to(roleRef.current, { opacity: 0, y: window.innerHeight/3 + 50, duration: 1, ease: "power1.in" })
       .to(techRef.current, { opacity: 1, y: window.innerHeight/3, duration: 1, ease: "power1.out" })
-      .to({}, { duration: 2 })
+      .to({}, { duration: 1 })
       .to(techRef.current, { opacity: 0, y: window.innerHeight/3 + 50, duration: 1, ease: "power1.in" })
       .to(problemRef.current, { opacity: 1, y: window.innerHeight/3, duration: 1, ease: "power1.out" })
-      .to({}, { duration: 2 })
+      .to({}, { duration: 1 })
       .to(problemRef.current, { opacity: 0, y: window.innerHeight/3 + 50, duration: 1, ease: "power1.in" });
 
     return () => {
