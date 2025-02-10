@@ -8,8 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "pnpm --filter client dev",
     "build": "pnpm --filter client build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "pnpm --filter client deploy"
   },
   "keywords": [],
   "author": "",
