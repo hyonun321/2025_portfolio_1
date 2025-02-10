@@ -39,11 +39,11 @@ const HeroSection = () => {
       <div className="text-center z-10">
         <h1
           ref={nameRef}
-          className="text-8xl font-bold tracking-tight text-white mb-4"
+          className="text-5xl sm:text-6xl md:text-8xl font-bold tracking-tight text-white mb-4"
         >
           HYONUN
         </h1>
-        <p ref={subtitleRef} className="text-xl text-gray-300">
+        <p ref={subtitleRef} className="sm:text-sm md:text-xl text-gray-300">
           FRONT-END DEVELOPER & UI ENGINEER
         </p>
       </div>
