@@ -18,7 +18,7 @@ export default function ProjectSection2() {
         start: "top center",
         end: "40% center",
         scrub: 1,
-        markers: true,
+        markers: false,
         toggleActions: "play none none reverse",
       },
       opacity: 1,
