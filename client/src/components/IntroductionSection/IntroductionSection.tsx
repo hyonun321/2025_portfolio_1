@@ -51,7 +51,7 @@ export default function IntroductionSection() {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top bottom",
-          end: "50% center",
+          end: "40% center",
           scrub: 1,
           markers: false,
           toggleActions: "play none none reverse",
@@ -86,16 +86,16 @@ export default function IntroductionSection() {
       ref={sectionRef}
       className="flex relative min-h-screen min-w-full justify-center"
     >
-      <div className="z-10 container mx-auto px-4 py-10 md:py-20">
+      <div className="z-10 container mx-auto px-2 py-6 md:px-4 md:py-10">
         <div
           ref={projectCardRef}
-          className="project-card backdrop-blur-md rounded-2xl p-6 md:p-8 transform"
+          className="project-card backdrop-blur-md rounded-2xl p-4 md:p-8 transform"
         >
-          <h3 className="flex flex-col text-3xl md:text-5xl font-semibold mb-4 text-white justify-center items-center">
+          <h3 className="flex flex-col text-2xl md:text-5xl font-semibold mb-2 md:mb-4 text-white justify-center items-center">
             <RotatingText />
           </h3>
-          <div className="flex flex-col border-x rounded-2xl p-6 md:p-16 gap-8 md:gap-16">
-            <div className="flex flex-col md:flex-row mb-5 justify-center items-center">
+          <div className="flex flex-col border-x rounded-2xl p-4 md:p-16 gap-4 md:gap-16">
+            <div className="flex flex-col md:flex-row mb-2 md:mb-5 justify-center items-center">
               <MeProfileImage />
               <IntroduceCard />
             </div>
