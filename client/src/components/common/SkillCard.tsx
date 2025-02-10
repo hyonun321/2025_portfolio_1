@@ -40,8 +40,7 @@ export default function SkillCard({
     setIsFlipped((prev) => !prev);
     gsap.to(flipRef.current, {
       rotationY: isFlipped ? 0 : 180,
-      duration: 0.4,
-      ease: "power4.out",
+      duration: 0.01,
     });
   };
 

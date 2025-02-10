@@ -7,18 +7,21 @@ export default function SkillCards() {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
       <SkillCard
         icon={FaReact}
-        highlight="Frontend"
-        title="React, Next.js"
-        subtitle="실시간 동시편집 에디터 Nocta (24.10~24.12)"
-        description="실시간 동시편집 에디터 CRDT 라이브러리 개발 "
+        highlight="Frontend Dev"
+        title="React, NextJS"
+        subtitle="실시간 동시편집 에디터 Nocta"
+        description="CRDT 라이브러리 개발"
         highlightColor="cyan"
         backContent={
           <div className="p-4 text-center">
-            <h3 className="text-[clamp(1rem,2.5vw,1.5rem)] font-bold">
-              추가 정보
+            <h3 className="text-xl md:text-xl sm:text-2xl font-bold">
+              네이버 부스트캠프 9기
+              <br /> (24.8~24.12)
             </h3>
-            <p className="text-[clamp(0.8rem,2vw,1.2rem)]">
-              여기에 더 자세한 내용을 넣을 수 있습니다.
+            <br />
+            <p className="text-left text-lg md:text-lg sm:text-xl">
+              - 프론트엔드 과정 수료
+              <br />- Javascript, React 기초 IT관련 지식 학습
             </p>
           </div>
         }
@@ -26,7 +29,7 @@ export default function SkillCards() {
 
       <SkillCard
         icon={PenTool}
-        highlight="UI/UX"
+        highlight="Web Design"
         title="Lotties, Figma"
         subtitle="로티 애니메이션 아이콘 제작"
         description="아이콘 디자인 경험"
@@ -62,11 +65,24 @@ export default function SkillCards() {
       />
       <SkillCard
         icon={Monitor}
-        highlight="Programming"
-        title="Nest.js"
-        subtitle="JavaScript, TypeScript"
+        highlight="Software"
+        title="Development"
+        subtitle="JavaScript, TypeScript, C"
         description="반도체 SW 엔지니어 경험"
         highlightColor="red"
+        backContent={
+          <div className="p-4 text-center">
+            <h3 className="text-lg md:text-lg sm:text-xl xl:text-lg font-bold">
+              반도체설비
+              <br /> System Software Engineer (22.4~23.6)
+            </h3>
+            <br />
+            <p className="text-left text-sm xl:text-lg sm:text-sm">
+              - 고객응대능력 설문, 팀 4명 중 1등
+              <br />- Recipe Management System 개발
+            </p>
+          </div>
+        }
       />
     </div>
   );
