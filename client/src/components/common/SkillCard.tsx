@@ -29,10 +29,10 @@ export default function SkillCard({
   const bgColorClass = bgColorMap[highlightColor] || "bg-cyan-700";
 
   return (
-    <div className="flex flex-col w-full  gap-4 p-6 bg-zinc-900/50 border justify-center z-10 cursor-pointer hover:bg-white/10">
+    <div className="flex flex-col w-full gap-4 p-6 bg-zinc-900/50 border justify-center z-10 cursor-pointer hover:bg-white/10">
       <div className="flex flex-row gap-4 justify-center">
         <Icon size={60} className="text-white" />
-        <h2 className="text-2xl font-bold text-white">
+        <h2 className="text-xl sm:text-2xl font-bold text-white">
           <div className="relative inline-block">
             {highlight}
             <div
@@ -46,8 +46,12 @@ export default function SkillCard({
       <div className="flex flex-col">
         <p className="text-gray-500">{`<h3>`}</p>
         <div className="border-l-2 border-gray-500 pl-4 ml-4 mt-2 mb-2">
-          <h3 className="text-xl text-white">{subtitle}</h3>
-          <p className="text-gray-300">{description}</p>
+          <h3 className="text-base sm:text-lg md:text-xl text-white">
+            {subtitle}
+          </h3>
+          <p className="text-sm sm:text-base md:text-lg text-gray-300">
+            {description}
+          </p>
         </div>
         <p className="text-gray-500">{`<h3>`}</p>
       </div>

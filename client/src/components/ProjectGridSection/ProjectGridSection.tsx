@@ -53,7 +53,7 @@ export default function ProjectGrid() {
 
   return (
     <div className="w-full relative px-4 py-8 z-10 min-h-screen">
-      <h1 className="text-6xl font-bold tracking-tight text-white mb-4 flex justify-center">
+      <h1 className="flex flex-col items-center justify-center text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-4">
         MY PROJECT
       </h1>
 
