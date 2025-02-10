@@ -9,6 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <body className="font-Poppins">
         <main className="min-h-screen pt-16">
           {" "}
