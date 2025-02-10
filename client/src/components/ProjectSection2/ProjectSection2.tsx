@@ -7,7 +7,7 @@ import SpeakerBackground from "./components/SpeakerBackground";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function ProjectsSection2() {
+export default function ProjectSection2() {
   const sectionRef = useRef(null);
   const projectCardRef = useRef(null);
 
