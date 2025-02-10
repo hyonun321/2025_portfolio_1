@@ -24,19 +24,18 @@ export default function VideoBackground({ sources }: VideoBackgroundProps) {
         try {
           if (videoRef.current && !hasPlayedRef.current) {
             await videoRef.current.play();
-            hasPlayedRef.current = true; // 재생 시작 표시
+            hasPlayedRef.current = true;
           }
         } catch (error) {
           console.log("Video playback error:", error);
         }
       };
 
-      // 스크롤 위치 감지를 위한 observer
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              playVideo(); // 화면에 들어왔을 때만 최초 재생
+              playVideo();
             }
           });
         },

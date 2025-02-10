@@ -4,7 +4,7 @@ import SkillCard from "@/components/common/SkillCard";
 
 export default function SkillCards() {
   return (
-    <div className="flex flex-row justify-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
       <SkillCard
         icon={Monitor}
         highlight="Development"

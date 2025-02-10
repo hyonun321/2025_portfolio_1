@@ -7,44 +7,76 @@ import SkillCards from "./components/SkillCards";
 import MeProfileImage from "./components/MeProfileImage";
 import RotatingText from "./components/RotatingText";
 import IntroduceCard from "./components/IntroduceCard";
-// Register ScrollTrigger once at the top level
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function IntroductionSection() {
-  const sectionRef = useRef(null);
-  const projectCardRef = useRef(null);
+  const sectionRef = useRef<HTMLElement>(null);
+  const projectCardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Create the animation configuration
-    const config = {
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: "top center",
-        end: "45% center",
-        scrub: 1,
-        markers: true,
-        toggleActions: "play none none reverse",
-      },
-      opacity: 1,
-      y: 0,
-      duration: 1,
-    };
+    const mm = gsap.matchMedia();
 
-    gsap.fromTo(
-      projectCardRef.current,
-      {
-        // Starting state
-        opacity: 0,
-        y: 100,
-        scale: 0.9,
-      },
-      {
-        ...config,
-        scale: 1,
-      }
-    );
+    mm.add("(min-width: 768px)", () => {
+      const config = {
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top center",
+          end: "40% center",
+          scrub: 1,
+          markers: false,
+          toggleActions: "play none none reverse",
+        },
+        opacity: 1,
+        y: 0,
+        duration: 1,
+      };
+
+      gsap.fromTo(
+        projectCardRef.current,
+        {
+          opacity: 0,
+          y: 100,
+          scale: 0.9,
+        },
+        {
+          ...config,
+          scale: 1,
+        }
+      );
+    });
+
+    mm.add("(max-width: 767px)", () => {
+      const config = {
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top bottom",
+          end: "50% center",
+          scrub: 1,
+          markers: false,
+          toggleActions: "play none none reverse",
+        },
+        opacity: 1,
+        y: 0,
+        duration: 1,
+      };
+
+      gsap.fromTo(
+        projectCardRef.current,
+        {
+          opacity: 0,
+          y: 100,
+          scale: 0.9,
+        },
+        {
+          ...config,
+          scale: 1,
+        }
+      );
+    });
 
     return () => {
+      mm.revert();
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
@@ -52,19 +84,18 @@ export default function IntroductionSection() {
   return (
     <section
       ref={sectionRef}
-      className="flex relative min-h-screen min-w-full justify-center "
+      className="flex relative min-h-screen min-w-full justify-center"
     >
-      <div className="absolute z-10 container mx-auto px-4 py-20">
+      <div className="z-10 container mx-auto px-4 py-10 md:py-20">
         <div
           ref={projectCardRef}
-          className="project-card backdrop-blur-m rounded-2xl p-8 transform"
+          className="project-card backdrop-blur-md rounded-2xl p-6 md:p-8 transform"
         >
-          {" "}
-          <h3 className="flex flex-col  text-5xl font-semibold mb-4 text-white justify-center items-center">
+          <h3 className="flex flex-col text-3xl md:text-5xl font-semibold mb-4 text-white justify-center items-center">
             <RotatingText />
           </h3>
-          <div className="flex flex-col border-x rounded-2xl p-16 gap-16">
-            <div className="flex flex-row mb-5 justify-center items-center ">
+          <div className="flex flex-col border-x rounded-2xl p-6 md:p-16 gap-8 md:gap-16">
+            <div className="flex flex-col md:flex-row mb-5 justify-center items-center">
               <MeProfileImage />
               <IntroduceCard />
             </div>
