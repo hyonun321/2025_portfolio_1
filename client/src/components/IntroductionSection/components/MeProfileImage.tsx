@@ -4,9 +4,9 @@ export default function MeProfileImage() {
   return (
     <ProfileImage
       sources={{
-        avif: "/images/me.avif",
-        webp: "/images/me.webp",
-        fallback: "/images/me.jpg",
+        avif: "images/me.avif",
+        webp: "images/me.webp",
+        fallback: "images/me.jpg",
       }}
       alt="me"
       info={{

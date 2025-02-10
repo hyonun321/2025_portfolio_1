@@ -2,14 +2,18 @@
   "name": "2025_portfolio_1",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://hyonun321.github.io/2025_portfolio_1/",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@types/three": "^0.172.0",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.12.5",
     "lucide-react": "^0.473.0",
     "next": "15.1.4",
