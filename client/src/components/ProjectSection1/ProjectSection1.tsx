@@ -158,7 +158,7 @@ export default function ProjectSection1() {
       className="min-h-screen relative z-10 pt-10"
     >
       <div ref={titleRef} className="w-full backdrop-blur-sm py-4 z-20">
-        <h1 className="flex flex-col items-center justify-center text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white">
+        <h1 className="flex flex-col items-center justify-center text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
           실시간 동시편집 에디터 Nocta
         </h1>
       </div>
