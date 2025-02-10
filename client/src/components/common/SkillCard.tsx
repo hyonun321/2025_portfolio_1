@@ -67,7 +67,7 @@ export default function SkillCard({
                 className="text-white"
                 style={{ fontSize: "clamp(2rem, 5vw, 3rem)" }}
               />{" "}
-              <h2 className="text-2xl sm:text-lg xl:text-3xl font-bold text-white">
+              <h2 className="text-xl sm:text-lg xl:text-3xl font-bold text-white">
                 <div className="relative inline-block">
                   {highlight}
                   <div
