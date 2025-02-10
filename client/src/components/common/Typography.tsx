@@ -4,7 +4,7 @@ interface StyledTextProps {
 }
 
 export const Highlight1 = ({ children }: StyledTextProps) => (
-  <span className="text-lg md:text-xl text-white text-gradient-cyan font-bold">
+  <span className="text-base md:text-xl text-white text-gradient-cyan font-bold">
     {children}
   </span>
 );
