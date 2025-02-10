@@ -60,7 +60,7 @@ export default function ProjectSection1() {
       return;
 
     // 총 스크롤 지속시간(타임라인 길이)을 11초로 설정 (필요에 따라 조절)
-    const totalDuration = 8;
+    const totalDuration = 6;
     const totalScrollDistance = window.innerHeight * totalDuration;
 
     gsap.set(roleRef.current, { opacity: 0, y: window.innerHeight / 3 - 50 });
@@ -111,37 +111,37 @@ export default function ProjectSection1() {
         duration: 1,
         ease: "power1.out",
       })
-      .to({}, { duration: 1 })
+      .to({}, { duration: 2.5 })
       .to(roleRef.current, {
         opacity: 0,
         y: window.innerHeight / 3 + 50,
-        duration: 1,
+        duration: 0.5,
         ease: "power1.in",
       })
       .to(techRef.current, {
         opacity: 1,
         y: window.innerHeight / 3,
-        duration: 1,
+        duration: 0.5,
         ease: "power1.out",
       })
-      .to({}, { duration: 1 })
+      .to({}, { duration: 2.5 })
       .to(techRef.current, {
         opacity: 0,
         y: window.innerHeight / 3 + 50,
-        duration: 1,
+        duration: 0.5,
         ease: "power1.in",
       })
       .to(problemRef.current, {
         opacity: 1,
         y: window.innerHeight / 3,
-        duration: 1,
+        duration: 0.5,
         ease: "power1.out",
       })
-      .to({}, { duration: 1 })
+      .to({}, { duration: 2.5 })
       .to(problemRef.current, {
         opacity: 0,
         y: window.innerHeight / 3 + 50,
-        duration: 1,
+        duration: 0.5,
         ease: "power1.in",
       });
 
@@ -166,6 +166,7 @@ export default function ProjectSection1() {
         <ProjectVideo
           videoRef={videoContainerRef}
           videoUrl="videos/nocta_background.mp4"
+          href="https://youtu.be/0AZAixGrMbo?si=XYzCG6aHaeZS5cbu"
         />
         <div ref={contentRef} className="relative min-h-screen ">
           <div
