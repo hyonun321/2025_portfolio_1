@@ -2,11 +2,14 @@
   "name": "2025_portfolio_1",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://hyonun321.github.io/2025_portfolio_1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "pnpm --filter client dev",
-    "build": "pnpm --filter client build"
+    "build": "pnpm --filter client build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +18,8 @@
     "eslint": "^9.18.0",
     "eslint-config-prettier": "^10.0.1",
     "prettier": "^3.4.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
