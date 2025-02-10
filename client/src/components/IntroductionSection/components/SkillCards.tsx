@@ -42,7 +42,9 @@ export default function SkillCards() {
                 alt="Nocta Night Animation"
                 className="w-32 h-32 md:w-32 md:h-32 object-contain rounded-3xl overflow-hidden"
               />
-              <span className="text-lg md:text-xl mt-1">Night GIF</span>
+              <span className="text-lg md:text-xl mt-1 text-center">
+                Night GIF
+              </span>
             </div>
             <div className="flex flex-col items-center">
               <img
@@ -50,7 +52,9 @@ export default function SkillCards() {
                 alt="NocTa Day Icon"
                 className="w-32 h-32 md:w-32 md:h-32 object-contain"
               />
-              <span className="text-lg md:text-xl mt-1">Day Icon</span>
+              <span className="text-lg md:text-xl mt-1 text-center">
+                Day Icon
+              </span>
             </div>
             <div className="flex flex-col items-center">
               <img
@@ -58,7 +62,9 @@ export default function SkillCards() {
                 alt="NocTa Night Icon"
                 className="w-32 h-32 md:w-32 md:h-32 object-contain"
               />
-              <span className="text-lg md:text-xl mt-1">Night Icon</span>
+              <span className="text-lg md:text-xl mt-1 text-center">
+                Night Icon
+              </span>
             </div>
           </div>
         }
@@ -73,7 +79,7 @@ export default function SkillCards() {
         backContent={
           <div className="p-4 text-center">
             <h3 className="text-lg md:text-lg sm:text-xl xl:text-lg font-bold">
-              반도체설비
+              외국계 반도체 SW OS
               <br /> System Software Engineer (22.4~23.6)
             </h3>
             <br />
