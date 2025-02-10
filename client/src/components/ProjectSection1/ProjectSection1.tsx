@@ -63,9 +63,12 @@ export default function ProjectSection1() {
     const totalDuration = 8;
     const totalScrollDistance = window.innerHeight * totalDuration;
 
-    gsap.set(roleRef.current, { opacity: 0, y: window.innerHeight/3 - 50 });
-    gsap.set(techRef.current, { opacity: 0, y: window.innerHeight/3 - 50 });
-    gsap.set(problemRef.current, { opacity: 0, y: window.innerHeight/3 - 50 });
+    gsap.set(roleRef.current, { opacity: 0, y: window.innerHeight / 3 - 50 });
+    gsap.set(techRef.current, { opacity: 0, y: window.innerHeight / 3 - 50 });
+    gsap.set(problemRef.current, {
+      opacity: 0,
+      y: window.innerHeight / 3 - 50,
+    });
 
     // 타이틀을 전체 스크롤 동안 고정 (pin)
     ScrollTrigger.create({
@@ -94,23 +97,53 @@ export default function ProjectSection1() {
         scrub: true,
         pin: true,
         pinSpacing: true,
-      }
+      },
     });
 
-    // 타임라인 구성  
-    // 롤 섹션: 2초간 유지 → 1초 fade out  
-    // 테크 섹션: 1초 fade in → 2초 유지 → 1초 fade out  
-    // 프러블럼 섹션: 1초 fade in → 2초 유지 → 1초 fade out  
+    // 타임라인 구성
+    // 롤 섹션: 2초간 유지 → 1초 fade out
+    // 테크 섹션: 1초 fade in → 2초 유지 → 1초 fade out
+    // 프러블럼 섹션: 1초 fade in → 2초 유지 → 1초 fade out
     masterTL
-      .to(roleRef.current, { opacity: 1, y: window.innerHeight/3, duration: 1, ease: "power1.out" })
+      .to(roleRef.current, {
+        opacity: 1,
+        y: window.innerHeight / 3,
+        duration: 1,
+        ease: "power1.out",
+      })
       .to({}, { duration: 1 })
-      .to(roleRef.current, { opacity: 0, y: window.innerHeight/3 + 50, duration: 1, ease: "power1.in" })
-      .to(techRef.current, { opacity: 1, y: window.innerHeight/3, duration: 1, ease: "power1.out" })
+      .to(roleRef.current, {
+        opacity: 0,
+        y: window.innerHeight / 3 + 50,
+        duration: 1,
+        ease: "power1.in",
+      })
+      .to(techRef.current, {
+        opacity: 1,
+        y: window.innerHeight / 3,
+        duration: 1,
+        ease: "power1.out",
+      })
       .to({}, { duration: 1 })
-      .to(techRef.current, { opacity: 0, y: window.innerHeight/3 + 50, duration: 1, ease: "power1.in" })
-      .to(problemRef.current, { opacity: 1, y: window.innerHeight/3, duration: 1, ease: "power1.out" })
+      .to(techRef.current, {
+        opacity: 0,
+        y: window.innerHeight / 3 + 50,
+        duration: 1,
+        ease: "power1.in",
+      })
+      .to(problemRef.current, {
+        opacity: 1,
+        y: window.innerHeight / 3,
+        duration: 1,
+        ease: "power1.out",
+      })
       .to({}, { duration: 1 })
-      .to(problemRef.current, { opacity: 0, y: window.innerHeight/3 + 50, duration: 1, ease: "power1.in" });
+      .to(problemRef.current, {
+        opacity: 0,
+        y: window.innerHeight / 3 + 50,
+        duration: 1,
+        ease: "power1.in",
+      });
 
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
@@ -119,22 +152,38 @@ export default function ProjectSection1() {
   }, []);
 
   return (
-    <section id="project-1" ref={sectionRef} className="min-h-screen relative z-10 pt-10">
+    <section
+      id="project-1"
+      ref={sectionRef}
+      className="min-h-screen relative z-10 pt-10"
+    >
       <div ref={titleRef} className="w-full backdrop-blur-sm py-4 z-20">
         <h1 className="flex items-center justify-center text-5xl font-bold tracking-tight text-white">
           실시간 동시편집 에디터 Nocta
         </h1>
       </div>
       <div className="max-w-screen mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-        <ProjectVideo videoRef={videoContainerRef} videoUrl="/videos/nocta_background.mp4" />
+        <ProjectVideo
+          videoRef={videoContainerRef}
+          videoUrl="videos/nocta_background.mp4"
+        />
         <div ref={contentRef} className="relative min-h-screen ">
-          <div ref={roleRef} className="absolute w-full flex items-center  z-20 p-4">
+          <div
+            ref={roleRef}
+            className="absolute w-full flex items-center  z-20 p-4"
+          >
             <RoleSection roles={projectData.roles} />
           </div>
-          <div ref={techRef} className="absolute w-full flex items-center  z-20 p-4">
+          <div
+            ref={techRef}
+            className="absolute w-full flex items-center  z-20 p-4"
+          >
             <TechnicalSection experiences={projectData.technicalExperiences} />
           </div>
-          <div ref={problemRef} className="absolute w-full flex items-center  z-20 p-4">
+          <div
+            ref={problemRef}
+            className="absolute w-full flex items-center  z-20 p-4"
+          >
             <ProblemSolvingSection {...projectData.problemSolving} />
           </div>
         </div>
