@@ -1,6 +1,7 @@
 interface TechnicalExperience {
   title: string;
   points: string[];
+  image?: string; // image 필드를 추가 (이미지 URL이 들어감)
 }
 
 interface TechnicalSectionProps {
@@ -17,6 +18,15 @@ export function TechnicalSection({ experiences }: TechnicalSectionProps) {
         {experiences.map((exp, index) => (
           <div key={index}>
             <h4 className="text-blue-400 font-semibold mb-2">{exp.title}</h4>
+            {exp.image && (
+              <div className="mb-2 justify-center items-center flex">
+                <img
+                  src={exp.image}
+                  alt={exp.title}
+                  className="w-1/2 rounded-md object-cover"
+                />
+              </div>
+            )}
             <ul className="text-gray-200 text-xl space-y-2">
               {exp.points.map((point, pointIndex) => (
                 <li key={pointIndex}>• {point}</li>

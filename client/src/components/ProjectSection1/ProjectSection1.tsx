@@ -30,6 +30,7 @@ export default function ProjectSection1() {
     technicalExperiences: [
       {
         title: "CRDT 라이브러리 설계 및 구현",
+        image: "images/schema.png",
         points: [
           "RGA 기반 이중 링크드리스트로 CRDT 설계 및 블록 단위 분리, 구조 도입",
           "EditorCRDT와 BlockCRDT 알고리즘을 통한 모듈화로 유지보수성 강화",
@@ -63,8 +64,8 @@ export default function ProjectSection1() {
     const totalDuration = 3.5;
     const totalScrollDistance = window.innerHeight * totalDuration;
 
-    gsap.set(roleRef.current, { opacity: 0, y: window.innerHeight / 3 - 50 });
-    gsap.set(techRef.current, { opacity: 0, y: window.innerHeight / 3 - 50 });
+    gsap.set(roleRef.current, { opacity: 0, y: window.innerHeight / 3 + 50 });
+    gsap.set(techRef.current, { opacity: 0, y: window.innerHeight / 3 + 50 });
     gsap.set(problemRef.current, {
       opacity: 0,
       y: window.innerHeight / 3 - 50,
@@ -168,7 +169,7 @@ export default function ProjectSection1() {
           videoUrl="videos/nocta_background.mp4"
           href="https://youtu.be/0AZAixGrMbo?si=XYzCG6aHaeZS5cbu"
         />
-        <div ref={contentRef} className="relative min-h-screen ">
+        <div ref={contentRef} className="relative min-h-screen items-center">
           <div
             ref={roleRef}
             className="absolute w-full flex items-center  z-20 p-4"
@@ -177,7 +178,7 @@ export default function ProjectSection1() {
           </div>
           <div
             ref={techRef}
-            className="absolute w-full flex items-center  z-20 p-4"
+            className="absolute flex items-center z-20 p-4 justify-center "
           >
             <TechnicalSection experiences={projectData.technicalExperiences} />
           </div>
