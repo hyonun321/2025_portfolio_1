@@ -1,13 +1,21 @@
 "use client";
+import React, { useState } from "react";
+import GridProjectModal from "./components/GridProjectModal";
+import Modal from "@/components/common/Modal";
 import ProjectCard from "@/components/common/ProjectCard";
-import { useState } from "react";
-interface Project {
-  id: number;
+import { Project } from "@/types";
+
+// 슬라이드 타입 (ProjectModalContent와 동일)
+type SlideData = {
+  mediaUrl: string;
   title: string;
-  technologies: string[];
-  image: string;
-  description: string;
-}
+  description?: string;
+  link?: string;
+  linkTitle?: string;
+  link2?: string;
+  link2Title?: string;
+};
+
 // 프로젝트 카테고리 정의
 const CATEGORIES = [
   { id: "all", label: "All", count: 2 },
@@ -21,7 +29,7 @@ const PROJECTS: Project[] = [
     title: "실시간 동시편집 에디터 Nocta",
     technologies: ["React"],
     image: "images/nocta_inform.jpg",
-    description: "React / Typescript / Vite / PandaCSS / Zustand ",
+    description: "React / Typescript / Vite / PandaCSS / Zustand",
   },
   {
     id: 2,
@@ -31,18 +39,46 @@ const PROJECTS: Project[] = [
     description: "Python / Raspberry Pi / OpenCV / Haarcascade",
   },
 ];
+const slidesData: SlideData[][] = [
+  [
+    {
+      mediaUrl: "videos/nocta_background.mp4",
+      title: "실시간 동시편집 에디터 Nocta",
+      description:
+        "CRDT를 기반으로 한 동시편집 에디터로, 실시간 협업이 가능합니다. 사용자가 동시에 문서를 편집해도 충돌 없이 잘 합쳐집니다.",
+      link: "https://youtu.be/0AZAixGrMbo?si=XYzCG6aHaeZS5cbu",
+      linkTitle: "Youtube",
+      link2: "",
+      link2Title: "",
+    },
+    {
+      mediaUrl: "images/schema.png",
+      title: "CRDT 라이브러리 구조",
+      description:
+        "아키텍처 다이어그램과 내부 동작 원리를 설명합니다. 라이브러리는 서버/클라이언트가 비동기로 협업하며, 로컬 저장을 지원합니다.",
+    },
+  ],
+  [
+    {
+      mediaUrl: "videos/speaker_background.mp4",
+      title: "얼굴 추적 지향성 스피커",
+      description:
+        "초음파 스피커와 haarcascade를 활용한 얼굴추적 지향성 스피커",
+      link: "https://youtu.be/odPTTYyX-1s?si=Tj_n4PJSfy5Z6inz",
+      linkTitle: "Youtube",
+    },
+    {
+      mediaUrl: "images/schema.png",
+      title: "CRDT 라이브러리 구조",
+      description:
+        "아키텍처 다이어그램과 내부 동작 원리를 설명합니다. 라이브러리는 서버/클라이언트가 비동기로 협업하며, 로컬 저장을 지원합니다.",
+    },
+  ],
+];
+
 export default function ProjectGrid() {
   const [activeCategory, setActiveCategory] = useState("all");
-
-  const scrollToProject = (projectId: number) => {
-    const element = document.getElementById(`project-${projectId}`);
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const filteredProjects = PROJECTS.filter((project) => {
     if (activeCategory === "all") return true;
@@ -57,7 +93,7 @@ export default function ProjectGrid() {
         MY PROJECT
       </h1>
 
-      {/* 카테고리 필터 버튼 섹션은 아직 그대로 유지 */}
+      {/* 카테고리 필터 버튼 */}
       <div className="flex gap-6 mb-12 justify-center">
         {CATEGORIES.map((category) => (
           <button
@@ -86,14 +122,24 @@ export default function ProjectGrid() {
             title={project.title}
             image={project.image}
             description={project.description}
-            onClick={() => scrollToProject(project.id)}
+            onClick={() => setSelectedProject(project)}
           />
         ))}
       </div>
 
-      {/* 그라데이션 라인 */}
+      {/* 모달창 */}
+      <Modal
+        isOpen={!!selectedProject}
+        onClose={() => setSelectedProject(null)}
+      >
+        {selectedProject && (
+          <GridProjectModal slides={slidesData[selectedProject.id - 1]} />
+        )}
+      </Modal>
+
+      {/* 그라데이션 라인 (장식) */}
       <div className="absolute bottom-0 left-0 right-0 flex justify-center w-full">
-        <div className="h-1 w-full max-w-xl mx-auto bg-gradient-purple " />
+        <div className="h-1 w-full max-w-xl mx-auto bg-gradient-to-r from-purple-500 to-pink-500" />
       </div>
     </div>
   );
