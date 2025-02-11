@@ -8,7 +8,7 @@ export default function SkillCards() {
       <SkillCard
         icon={FaReact}
         highlight="Frontend Dev"
-        title="React, NextJS"
+        title="React"
         subtitle="실시간 동시편집 에디터 Nocta"
         description="CRDT 라이브러리 개발"
         highlightColor="cyan"
