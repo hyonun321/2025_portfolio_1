@@ -6,8 +6,13 @@ export type SlideData = {
   mediaUrl: string; // 동영상(.mp4) 또는 이미지(.png/.jpg) 경로
   title: string;
   description?: string;
+  subTitle?: string;
   link?: string;
   linkTitle?: string;
+  link2?: string;
+  link2Title?: string;
+  link3?: string;
+  link3Title?: string;
 };
 
 // props 타입
@@ -57,42 +62,72 @@ export default function GridProjectModal({ slides }: GridProjectModalProps) {
             autoPlay
             loop
             muted
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
         ) : (
           <img
             src={slide.mediaUrl}
             alt={slide.title}
-            className="w-full h-full object-cover"
+            className=" h-full w-full object-contain"
           />
         )}
       </div>
 
       {/* 하단 영역: 텍스트 + 링크 (스크롤 가능) */}
       <div className="flex flex-col h-1/2 overflow-y-auto p-4">
-        <h2 className="text-2xl text-white font-semibold mb-2">
-          {slide.title}
-        </h2>
-        {slide.description && (
-          <p className="text-gray-300 leading-relaxed mb-4 whitespace-pre-line">
-            {slide.description}
-          </p>
-        )}
-        {slide.link && (
-          <div className="mt-4">
-            <a
-              href={slide.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-4 py-2 text-white bg-pink-500 rounded hover:bg-pink-400 transition"
-            >
-              {slide.linkTitle || "LINK"}
-            </a>
+        <h2 className="text-2xl text-white font-semibold">{slide.title}</h2>
+        <div className=" gap-5">
+          {slide.subTitle && (
+            <p className="text-gray-400 leading-relaxed mb-2 whitespace-pre-line bg-">
+              {slide.subTitle}
+            </p>
+          )}
+          {slide.description && (
+            <p className="text-gray-100 leading-relaxed mb-4 whitespace-pre-line">
+              {slide.description}
+            </p>
+          )}
+          <div className="flex flex-row gap-5">
+            {slide.link && (
+              <div className="mt-4">
+                <a
+                  href={slide.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 text-white bg-pink-500 rounded hover:bg-pink-400 transition"
+                >
+                  {slide.linkTitle || "LINK"}
+                </a>
+              </div>
+            )}
+            {slide.link2 && (
+              <div className="mt-4">
+                <a
+                  href={slide.link2}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 text-white bg-pink-500 rounded hover:bg-pink-400 transition"
+                >
+                  {slide.link2Title || "LINK"}
+                </a>
+              </div>
+            )}
+            {slide.link3 && (
+              <div className="mt-4">
+                <a
+                  href={slide.link3}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 text-white bg-pink-500 rounded hover:bg-pink-400 transition"
+                >
+                  {slide.link3Title || "LINK"}
+                </a>
+              </div>
+            )}
           </div>
-        )}
+        </div>
       </div>
 
-      {/* 이전/다음 버튼 + 페이지 표시 */}
       <div className="bg-zinc-700 flex items-center justify-between p-4">
         <button
           onClick={goToPrev}
@@ -103,7 +138,7 @@ export default function GridProjectModal({ slides }: GridProjectModalProps) {
             disabled:opacity-50 disabled:cursor-not-allowed
           "
         >
-          이전
+          ◀
         </button>
 
         <span className="text-gray-200">
@@ -119,7 +154,7 @@ export default function GridProjectModal({ slides }: GridProjectModalProps) {
             disabled:opacity-50 disabled:cursor-not-allowed
           "
         >
-          다음
+          ▶
         </button>
       </div>
     </div>
