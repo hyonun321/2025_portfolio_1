@@ -10,10 +10,13 @@ type SlideData = {
   mediaUrl: string;
   title: string;
   description?: string;
+  subTitle?: string;
   link?: string;
   linkTitle?: string;
   link2?: string;
   link2Title?: string;
+  link3?: string;
+  link3Title?: string;
 };
 
 // 프로젝트 카테고리 정의
@@ -45,17 +48,51 @@ const slidesData: SlideData[][] = [
       mediaUrl: "videos/nocta_background.mp4",
       title: "실시간 동시편집 에디터 Nocta",
       description:
-        "CRDT를 기반으로 한 동시편집 에디터로, 실시간 협업이 가능합니다. 사용자가 동시에 문서를 편집해도 충돌 없이 잘 합쳐집니다.",
-      link: "https://youtu.be/0AZAixGrMbo?si=XYzCG6aHaeZS5cbu",
-      linkTitle: "Youtube",
-      link2: "",
-      link2Title: "",
+        "연산기반 CRDT를 기반으로 한 실시간 동시편집 에디터  \n 탭 브라우징으로 여러 페이지를 자유롭게 넘나들 수 있습니다. \n 인터랙티브한 요소들로 재밌는 문서작성을 추구합니다. ",
+      subTitle: "네이버 부스트캠프 Web 9기 그룹프로젝트 (2024.10 ~ 2024.12)",
+      link: "https://nocta.site",
+      linkTitle: "View Site",
+      link2: "https://github.com/boostcampwm-2024/web33-Nocta",
+      link2Title: "Github",
+      link3: "https://youtu.be/0AZAixGrMbo?si=71fZcmKYb2AbAlkS",
+      link3Title: "Youtube",
     },
     {
       mediaUrl: "images/schema.png",
-      title: "CRDT 라이브러리 구조",
+      title: "CRDT 라이브러리 설계 및 구현",
       description:
-        "아키텍처 다이어그램과 내부 동작 원리를 설명합니다. 라이브러리는 서버/클라이언트가 비동기로 협업하며, 로컬 저장을 지원합니다.",
+        " 페이지, 블록, 텍스트를 가지는 다중 링크드 리스트로 데이터 구조 설정\n RGA 기반 이중 링크드리스트로 CRDT 설계, 텍스트블록도 링크드 리스트로 순서 변경 가능 \n EditorCRDT와 BlockCRDT 분리를 통한 모듈화로 유지보수성 강화 \n 블록 단위 동기화 방식 도입으로 대규모 문서 처리 시 확장성 확보 \n @noctaCrdt이름으로 pnpm 모노 레포지토리 빌드 React와 Nest.js 에서 접근 가능하도록 설정",
+      subTitle:
+        "중앙 서버에 의존하지 않는 연산기반 CRDT(Conflict-free Replicated Data Type) ",
+      link: "https://velog.io/@hyonun/CRDT-구현-여정기-1-CRDT를-사용하고-구현방식을-정해보자",
+      linkTitle: "Blog",
+    },
+    {
+      mediaUrl: "videos/nocta_workspace.mp4",
+      title: "워크스페이스 권환 관리 시스템 구현",
+      subTitle: "사용자별 워크스페이스 접근 권한 시스템 설계 및 구현",
+      description:
+        " WebSocket 기반 페이지별 실시간 다중 접속 관리 및 상태 동기 \n Socket.io를 활용한 실시간 알림 시스템(Toast)으로 협업 경험 개선 ",
+      link: "https://velog.io/@hyonun/Socket.io-Workspace-구현-여정기-1-게스트-유저-Workspace-분리화",
+      linkTitle: "Blog",
+    },
+    {
+      mediaUrl: "images/nocta_opt.jpg",
+      title: "렌더링 시간 55% 개선",
+      subTitle: "불필요한 리렌더링 최적화",
+      description:
+        " React.memo를 활용 하여 블럭 요소 리렌더링 메모이제이션 \n 리스트 가상화를 통한 보이는 요소만 렌더링 처리 \n  Render 11.3ms -> 4.9ms \n Layout effects 1.3ms -> 0.6ms \n Passivce effects 1ms -> 0.6ms \n 총합: 13.6ms -> 6.1ms (55.1% 개선)",
+      link: "https://abrupt-feta-9a9.notion.site/CS-958d64dbd60546a9bf75805156168f40?pvs=4",
+      linkTitle: "Notion",
+    },
+    {
+      mediaUrl: "images/nocta_edit.jpg",
+      title: "시연영상, OnboadingScreen, 아이콘 제작",
+      subTitle: "프리미어 프로 및 lotties, phase 활용 ",
+      description:
+        "promo 비디오 제작 \n 타이포그래피 및 ease 트랜지션을 활용하여 시청자의 시선 집중유도 \n 유저 몰입도를 높이기 위한 온보딩 스크린 제작 ",
+      link: "https://abrupt-feta-9a9.notion.site/Nocta-promo-dcc6dc48d7e74f53b455857010c2d2aa?pvs=4",
+      linkTitle: "Notion",
     },
   ],
   [
@@ -68,16 +105,28 @@ const slidesData: SlideData[][] = [
       linkTitle: "Youtube",
     },
     {
-      mediaUrl: "images/speaker_haarcascade.jpg",
+      mediaUrl: "images/speaker_haarcascade.JPG",
       title: "Haarcascade 알고리즘 선정",
       description:
-        "Yolo v3, CNN,DNN에비해 라즈비안(2CPU, 2GB)이라는 제한된 환경에서 동작하기위해 준수한 얼굴 추적률, 빠른 속도를 가짐",
+        "Yolo v3, CNN,DNN에비해 라즈비안(2CPU, 2GB)이라는 제한된 환경에서 동작하기위해 준수한 얼굴 추적률, 빠른 속도를 가짐 \n frontalface, profileface xml 데이터셋을 동시에 활용하여 얼굴 검출률 향상 \n 동일한 얼굴 출연 영상에서 얼굴 감지 15% 증가",
     },
     {
-      mediaUrl: "images/speaker_3D_modeling.jpg",
+      mediaUrl: "images/speaker_3D_modeling.JPG",
       title: "역할 - SW 팀장",
       description:
         "지향성 스피커 회사와 협업하여 3D 모델링 고안, 전체적인 SW 알고리즘 및 HW환경 구현",
+    },
+    {
+      mediaUrl: "videos/speaker_jittering.mp4",
+      title: "문제 해결 경험 : 서보모터 Jittering",
+      description:
+        "추가 전원 공급 등의 방안이 있었지만 기존 디자인을 활용하기 위해 \n pigpiod 데몬 활용 \n CPU에 서보모터용 스레드를 할당하여 OS연산이 서보모터에 영향을 받지 않도록 처리",
+    },
+    {
+      mediaUrl: "videos/speaker_tracking_face.mp4",
+      title: "간단한 시연 영상",
+      description:
+        "초당 4f 의 속도로 사용자의 얼굴을 추적 \n 5초간 얼굴이 감지되지않으면 기본 위치로 초기화 \n ",
     },
   ],
 ];
