@@ -13,6 +13,8 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
     if (isOpen) {
       document.body.style.overflow = "hidden";
       const preventTouch = (e: TouchEvent) => {
+        // 모달 내부의 터치 이벤트는 막지 않고, 모달 외부 터치 이벤트에 한해서만 기본 동작을 막음
+        if ((e.target as HTMLElement).closest(".modal-content")) return;
         e.preventDefault();
       };
       document.addEventListener("touchmove", preventTouch, { passive: false });
@@ -36,7 +38,7 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
         className="
           relative bg-zinc-800 rounded-lg shadow-lg max-w-4xl w-full p-4
           transition-all duration-300 transform
-          opacity-100 scale-100 p-auto
+          opacity-100 scale-100 p-auto modal-content
         "
       >
         <button
