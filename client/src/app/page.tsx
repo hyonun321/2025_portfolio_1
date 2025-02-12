@@ -5,7 +5,7 @@ import ProjectGridSection from "@/components/ProjectGridSection/ProjectGridSecti
 import ProfessionalExperienceSection from "@/components/ProfessionalExperienceSection/ProfessionalExperienceSection";
 export default function HomePage() {
   return (
-    <main className="bg-zinc-800 flex justify-center flex-col gap-40">
+    <main className="bg-zinc-800 flex justify-center items-center flex-col gap-40">
       <HeroSection />
       <IntroductionSection />
       <ProjectGridSection />
