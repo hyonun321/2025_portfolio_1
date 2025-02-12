@@ -27,24 +27,21 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
 
   return ReactDOM.createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden transition-opacity duration-300">
-      {/* 배경 (클릭 시 모달 닫힘) */}
       <div
         className="absolute inset-0 bg-black bg-opacity-60"
         onClick={onClose}
       ></div>
 
-      {/* 실제 모달 콘텐츠 영역 */}
       <div
         className="
           relative bg-zinc-800 rounded-lg shadow-lg max-w-4xl w-full p-4
           transition-all duration-300 transform
-          opacity-100 scale-100
+          opacity-100 scale-100 p-auto
         "
       >
-        {/* 닫기 버튼 */}
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 text-white hover:text-gray-300 transition-colors"
+          className="absolute z-20 top-2 right-2 text-white hover:text-gray-300 transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
