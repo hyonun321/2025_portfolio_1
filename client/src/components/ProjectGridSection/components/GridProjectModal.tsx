@@ -74,7 +74,7 @@ export default function GridProjectModal({ slides }: GridProjectModalProps) {
           {slide.title}
         </h2>
         {slide.description && (
-          <p className="text-gray-300 leading-relaxed mb-4">
+          <p className="text-gray-300 leading-relaxed mb-4 whitespace-pre-line">
             {slide.description}
           </p>
         )}
