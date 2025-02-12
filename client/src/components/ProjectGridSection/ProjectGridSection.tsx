@@ -61,17 +61,23 @@ const slidesData: SlideData[][] = [
   [
     {
       mediaUrl: "videos/speaker_background.mp4",
-      title: "얼굴 추적 지향성 스피커",
+      title: "얼굴 추적 지향성 스피커 (2020.5 ~ 2020.11)",
       description:
-        "초음파 스피커와 haarcascade를 활용한 얼굴추적 지향성 스피커",
+        "\n초음파 스피커와 haarcascade를 활용한 얼굴추적 지향성 스피커",
       link: "https://youtu.be/odPTTYyX-1s?si=Tj_n4PJSfy5Z6inz",
       linkTitle: "Youtube",
     },
     {
-      mediaUrl: "images/schema.png",
-      title: "CRDT 라이브러리 구조",
+      mediaUrl: "images/speaker_haarcascade.jpg",
+      title: "Haarcascade 알고리즘 선정",
       description:
-        "아키텍처 다이어그램과 내부 동작 원리를 설명합니다. 라이브러리는 서버/클라이언트가 비동기로 협업하며, 로컬 저장을 지원합니다.",
+        "Yolo v3, CNN,DNN에비해 라즈비안(2CPU, 2GB)이라는 제한된 환경에서 동작하기위해 준수한 얼굴 추적률, 빠른 속도를 가짐",
+    },
+    {
+      mediaUrl: "images/speaker_3D_modeling.jpg",
+      title: "역할 - SW 팀장",
+      description:
+        "지향성 스피커 회사와 협업하여 3D 모델링 고안, 전체적인 SW 알고리즘 및 HW환경 구현",
     },
   ],
 ];
