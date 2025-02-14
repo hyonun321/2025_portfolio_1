@@ -60,7 +60,7 @@ export default function ProfessionalExperienceSection() {
 
   return (
     <section className="z-10 w-full flex flex-col justify-center items-center max-w-4xl px-2 py-6 md:px-4 md:py-10 p-6">
-      <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-center text-white">
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-12 text-center text-white">
         Professional <br /> Experience
       </h2>
 
@@ -71,7 +71,6 @@ export default function ProfessionalExperienceSection() {
             key={index}
             className="mb-4 w-full rounded-lg overflow-hidden shadow-md "
           >
-            {/* 버튼 영역 (그라디언트와 트랜지션) */}
             <button
               onClick={() => handleToggle(index)}
               className="w-full flex justify-between items-center px-4 py-3
@@ -79,20 +78,15 @@ export default function ProfessionalExperienceSection() {
                          hover:from-purple-800 hover:to-indigo-800 transition-colors duration-300
                          focus:outline-none"
             >
-              {/* 제목 + 기간을 한 줄에 배치 */}
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
                 <span>{exp.title}</span>
                 <span className="text-sm text-gray-300">({exp.period})</span>
               </div>
 
-              {/* 열림/닫힘 아이콘(기본: + / -) */}
               <span className="ml-2 text-2xl">{isOpen ? "−" : "+"}</span>
             </button>
-
-            {/* 펼쳐지는 콘텐츠 영역 */}
             <CollapsibleContent isOpen={isOpen}>
               <div className="bg-zinc-700 px-4 py-4">
-                {/* 위치 아이콘, 웹사이트 링크 등 */}
                 <div className="flex items-center gap-4 text-gray-100 mb-4">
                   {exp.location && (
                     <div className="flex items-center gap-1">
@@ -115,12 +109,10 @@ export default function ProfessionalExperienceSection() {
                   )}
                 </div>
 
-                {/* 설명 부분 */}
                 <p className="leading-relaxed whitespace-pre-line text-zinc-50 mb-4">
                   {exp.description}
                 </p>
 
-                {/* 기술 스택 등 태그 배치 (원한다면 사각형 배경 등) */}
                 {exp.techStack && exp.techStack.length > 0 && (
                   <div className="bg-zinc-800 p-4 rounded-md">
                     <h3 className="text-white font-semibold mb-2">
