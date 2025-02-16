@@ -2,13 +2,14 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollIndicator from "@/components/common/ScrollIndicator";
+import LanguageSelector from "../common/LanguageSelector";
 
 const HeroSection = () => {
   const nameRef = useRef(null);
   const subtitleRef = useRef(null);
+  const selectorRef = useRef(null); 
 
   useEffect(() => {
-    // 메인 텍스트 애니메이션만 담당
     const tl = gsap.timeline({
       defaults: {
         ease: "power3.out",
@@ -19,15 +20,25 @@ const HeroSection = () => {
       y: 100,
       opacity: 0,
       duration: 1,
-    }).from(
-      subtitleRef.current,
-      {
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-      },
-      "-=0.3"
-    );
+    })
+      .from(
+        subtitleRef.current,
+        {
+          y: 50,
+          opacity: 0,
+          duration: 0.8,
+        },
+        "-=0.3"
+      )
+      .from(
+        selectorRef.current,
+        {
+          y: 20,
+          opacity: 0,
+          duration: 0.6,
+        },
+        "-=0.2" 
+      );
 
     return () => {
       tl.kill();
@@ -46,6 +57,9 @@ const HeroSection = () => {
         <p ref={subtitleRef} className="sm:text-sm md:text-xl text-gray-300">
           FRONT-END DEVELOPER & UI ENGINEER
         </p>
+      </div>
+      <div ref={selectorRef} className="mt-4 z-10">
+        <LanguageSelector />
       </div>
 
       <ScrollIndicator />
