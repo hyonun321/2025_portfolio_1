@@ -48,7 +48,7 @@ const slidesData: SlideData[][] = [
       mediaUrl: "videos/nocta_background.mp4",
       title: "실시간 동시편집 에디터 Nocta",
       description:
-        "연산기반 CRDT를 기반으로 한 실시간 동시편집 에디터  \n 탭 브라우징으로 여러 페이지를 자유롭게 넘나들 수 있습니다. \n 인터랙티브한 요소들로 재밌는 문서작성을 추구합니다. ",
+        "연산기반 CRDT를 기반으로 한 실시간 동시편집 에디터  \n - 탭 브라우징으로 여러 페이지를 자유롭게 넘나들 수 있습니다. \n - 인터랙티브한 요소들로 재밌는 문서작성을 추구합니다. ",
       subTitle: "네이버 부스트캠프 Web 9기 그룹프로젝트 (2024.10 ~ 2024.12)",
       link: "https://nocta.site",
       linkTitle: "View Site",
@@ -61,9 +61,9 @@ const slidesData: SlideData[][] = [
       mediaUrl: "images/schema.png",
       title: "CRDT 라이브러리 설계 및 구현",
       description:
-        " - 페이지, 블록, 텍스트를 가지는 다중 링크드 리스트로 데이터 구조 설정\n - RGA 기반 이중 링크드리스트로 CRDT 설계, 텍스트블록도 링크드 리스트로 순서 변경 가능 \n - EditorCRDT와 BlockCRDT 분리를 통한 모듈화로 유지보수성 강화 \n 블록 단위 동기화 방식 도입으로 대규모 문서 처리 시 확장성 확보 \n - @noctaCrdt이름으로 pnpm 모노 레포지토리 빌드 React와 Nest.js 에서 접근 가능하도록 설정",
+        " - 페이지, 블록, 텍스트를 가지는 다중 링크드 리스트로 데이터 구조 설정\n - RGA 기반 이중 링크드리스트로 CRDT 설계, 텍스트블록도 링크드 리스트로 순서 변경 가능 \n - EditorCRDT와 BlockCRDT 분리를 통한 모듈화로 유지보수성 강화 \n - 블록 단위 동기화 방식 도입으로 대규모 문서 처리 시 확장성 확보 \n - @noctaCrdt이름으로 pnpm 모노 레포지토리 빌드 React와 Nest.js 에서 접근 가능하도록 설정",
       subTitle:
-        "- 중앙 서버에 의존하지 않는 연산기반 CRDT(Conflict-free Replicated Data Type) ",
+        "중앙 서버에 의존하지 않는 연산기반 CRDT(Conflict-free Replicated Data Type) ",
       link: "https://velog.io/@hyonun/CRDT-구현-여정기-1-CRDT를-사용하고-구현방식을-정해보자",
       linkTitle: "Blog",
     },
