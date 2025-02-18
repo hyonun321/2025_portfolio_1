@@ -5,12 +5,11 @@ import Modal from "@/components/common/Modal";
 import ProjectCard from "@/components/common/ProjectCard";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Project } from "@/types";
-// slidesData 파일에서 각 언어별 데이터를 import합니다.
 import { slidesData as slidesDataKR, slidesDataEN, slidesDataJP } from "./data/SlideData";
 
 const translations = {
   KR: {
-    header: "MY PROJECT", // 필요에 따라 번역 수정
+    header: "MY PROJECT", 
     categories: {
       all: "전체",
       react: "React",
@@ -26,7 +25,7 @@ const translations = {
     },
   },
   JP: {
-    header: "MY PROJECT", // 필요 시 "マイプロジェクト" 등으로 수정
+    header: "MY PROJECT",
     categories: {
       all: "全て",
       react: "React",
@@ -115,7 +114,7 @@ export default function ProjectGrid() {
 
   return (
     <div className="w-full relative px-4 py-8 z-10 min-h-screen">
-      <h1 className="flex flex-col items-center justify-center text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-4">
+      <h1 className="flex flex-col items-center justify-center text-4xl sm:text-4xl md:text-6xl font-bold tracking-tight text-white mb-4">
         {currentTranslation.header}
       </h1>
 
@@ -125,7 +124,7 @@ export default function ProjectGrid() {
           <button
             key={category.id}
             onClick={() => setActiveCategory(category.id)}
-            className={`relative px-4 py-2 text-xl transition-all ${
+            className={`relative px-4 py-2 text-sm md:text-xl transition-all ${
               activeCategory === category.id
                 ? "text-white"
                 : "text-gray-400 hover:text-white"
