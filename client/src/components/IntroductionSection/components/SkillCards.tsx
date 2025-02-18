@@ -98,12 +98,12 @@ export default function SkillCards() {
         description: "CRDT Library Development",
         backContent: (
           <div className="p-4 text-center">
-            <h3 className="text-xl md:text-xl sm:text-2xl font-bold">
-              Naver Boostcamp Batch 9
+            <h3 className="text-lg md:text-lg sm:text-2xl font-bold xl:text-xl">
+              Naver Boostcamp 9
               <br /> (Aug 2024 ~ Dec 2024)
             </h3>
             <br />
-            <p className="text-left text-lg md:text-lg sm:text-xl">
+            <p className="text-left text-sm md:text-sm xl:text-lg sm:text-xl">
               - Completed the Frontend course
               <br />- Learned fundamentals of JavaScript, React, and basic IT knowledge
             </p>
@@ -157,12 +157,12 @@ export default function SkillCards() {
         description: "Semiconductor SW Engineer Experience",
         backContent: (
           <div className="p-4 text-center">
-            <h3 className="text-lg md:text-lg sm:text-xl xl:text-lg font-bold">
+            <h3 className="text-lg md:text-sm sm:text-lg xl:text-xl font-bold">
               Semiconductor SW OS
               <br /> System Software Engineer  <br/>(Apr 2022 ~ Jun 2023)
             </h3>
             <br />
-            <p className="text-left text-sm xl:text-lg sm:text-sm">
+            <p className="text-left text-xs xl:text-lg sm:text-sm">
               - Ranked 1st among 4 team members in customer service ability survey
               <br />- Developed a Recipe Management System
             </p>
