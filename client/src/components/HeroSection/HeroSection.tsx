@@ -58,10 +58,9 @@ const HeroSection = () => {
           FRONT-END DEVELOPER & UI ENGINEER
         </p>
       </div>
-      <div ref={selectorRef} className="mt-4 z-10">
+      <div ref={selectorRef} className="mt-4 z-30">
         <LanguageSelector />
       </div>
-
       <ScrollIndicator />
     </section>
   );
