@@ -5,7 +5,6 @@ import { Highlight1, Highlight2 } from "@/components/common/Typography";
 
 export default function IntroduceCard() {
   const { language } = useLanguage();
-  console.log(language);
   // 언어별로 텍스트를 정리한 객체
   const translations = {
     KR: {
