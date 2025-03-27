@@ -125,6 +125,55 @@ export const slidesData: SlideData[][] = [
         "- 회사와 협업하며 배운 비지니스 커뮤니케이션 \n - 문제해결을 위한 근본적인 원인 파악 (서보모터 지터링) \n - 모델의 활용도에 따라 검출률 보완 \n - 제한된 환경에서 최선의 선택을 하기 위한 방법 탐구 ",
     },
   ],
+  [
+    {
+      mediaUrl: "videos/doss_promo.mp4",
+      title: "앱 설치 없이, 웹에서 Doss ",
+      subTitle:
+        "LG 유레카 프론트엔드 미니 프로젝트 (2025.03.13. ~ 2025.03.21) 9days",
+      description: "\n- Toss 카피앱, 주식 정보 모아보기 앱라이크 웹 서비스",
+      link: "https://youtu.be/vD-YFp99zmY?si=dT1TFnv6ajCU-NtQ",
+      linkTitle: "Youtube",
+    },
+    {
+      mediaUrl: "videos/doss_promo.mp4",
+      subTitle: "팀장 (총 팀원 2명)",
+      title: "역할",
+      description:
+        "- 앱과 같은 사용성 중시, figma를 통해 디자인 제작 \n - 컴포지블UI 스타일로 FE 컴포넌트 구조 설계 \n - promo 영상 제작 (premiere pro) \n - 파운데이션 제작 후, 플로우 차트에 따라 시안 제작",
+      link: "https://www.figma.com/proto/Zpf6U1PgXsYQnZiomc2QSF/%EC%9C%A0%EB%A0%88%EC%B9%B4-3%ED%8C%80-MINI-PROJECT?node-id=132-4914&t=mBdT3P4pwjsJo7Ki-1",
+      linkTitle: "Figma",
+    },
+
+    {
+      mediaUrl: "images/doss_search.gif",
+      title: "검색결과 자동완성 구현",
+      subTitle: "엘라스틱 서치, 디바운싱 ",
+      description:
+        "- 0.3ms 단위로 디바운싱 적용하여 서버에 검색어 요청 \n - 엘라스틱 서치: 주식 검색 사용, 6000개의 주식정보(국내/해외) 엘라스틱 서치에 반영 \n - 엘라스틱 서치를 통해 얻은 주식 종목코드를 통한 실시간 금액 확인 기능",
+    },
+    {
+      mediaUrl: "images/doss_home.gif",
+      title: "한국투자증권 API 연동 실시간 주식정보 ",
+      subTitle: "Spring, java",
+      description:
+        " - 한국투자증권 API활용하여 거래대금/거래량/급상승/급하락 정보 조회\n - useEffect를 통해 서버에 주식정보 요청 \n - 서버는 1분 이내면 캐시된 데이터를 보내며 1분단위로 주식 가격을 갱신\n - 추후 Websocket 으로 연동하여 실시간으로 가격 변동 반영 예정",
+    },
+    {
+      mediaUrl: "images/doss_intro.gif",
+      title: "toss 라이브러리 적용 ",
+      subTitle: "@toss/useFunnel, @toss/impression-area",
+      description:
+        " - 회원가입의 퍼널상태 저장을 위해 사용 \n - 간편한 상태관리와 깔끔한 코드 작성가능 \n - 뷰포트에 보여지거나 사라지는 시점에 이벤트를 발생시키는 컴포넌트 사용",
+    },
+    {
+      mediaUrl: "images/doss.jpg",
+      title: "배운점",
+      subTitle: "takeaway",
+      description:
+        "- 앱환경에서 필요한 사용자 인터랙션의 이해 \n - 엘라스틱서치 및 백엔드 환경의 이해 (Controller, Service, Dao, Dto) \n - figma 디자인 시스템 설계 이해",
+    },
+  ],
 ];
 
 export const slidesDataEN: SlideData[][] = [
@@ -246,6 +295,55 @@ export const slidesDataEN: SlideData[][] = [
         "- Learned business communication through collaboration\n - Identified the root causes for problem-solving (servo motor jittering)\n - Improved detection rate based on the model's utilization\n - Explored methods to make the best choices in a constrained environment",
     },
   ],
+  [
+    {
+      mediaUrl: "videos/doss_promo.mp4",
+      title: "Doss on the Web, No App Installation Needed",
+      subTitle:
+        "LG Eureka Frontend Mini Project (2025.03.13 ~ 2025.03.21) 9 days",
+      description:
+        "\n- Toss copy app, stock information aggregator web service",
+      link: "https://youtu.be/vD-YFp99zmY?si=dT1TFnv6ajCU-NtQ",
+      linkTitle: "Youtube",
+    },
+    {
+      mediaUrl: "videos/doss_promo.mp4",
+      title: "Role",
+      subTitle: "Team Leader (Total team members: 2)",
+      description:
+        "- Emphasized app-like usability, created designs using Figma\n - Designed frontend component structure with composable UI style\n - Produced promo video (Premiere Pro)\n - Created foundation and developed prototypes according to flow chart",
+      link: "https://www.figma.com/proto/Zpf6U1PgXsYQnZiomc2QSF/%EC%9C%A0%EB%A0%88%EC%B9%B4-3%ED%8C%80-MINI-PROJECT?node-id=132-4914&t=mBdT3P4pwjsJo7Ki-1",
+      linkTitle: "Figma",
+    },
+    {
+      mediaUrl: "images/doss_search.gif",
+      title: "Implementation of Search Autocomplete",
+      subTitle: "Elasticsearch, Debouncing",
+      description:
+        "- Applied 0.3ms debouncing to search term requests to server\n - Elasticsearch: Used for stock searches, indexed 6000 stock information items (domestic/international)\n - Real-time price checking function using stock codes obtained through Elasticsearch",
+    },
+    {
+      mediaUrl: "images/doss_home.gif",
+      title: "Real-time Stock Information via Korea Investment Securities API",
+      subTitle: "Spring, Java",
+      description:
+        "- Utilized Korea Investment Securities API to view trading volume/value and rapid rise/fall information\n - Used useEffect to request stock information from server\n - Server sends cached data if within 1 minute and updates stock prices every minute\n - Planning to implement Websocket connection for real-time price updates in the future",
+    },
+    {
+      mediaUrl: "images/doss_intro.gif",
+      title: "Implementation of Toss Libraries",
+      subTitle: "@toss/useFunnel, @toss/impression-area",
+      description:
+        "- Used for storing funnel states in the signup process\n - Enables simple state management and clean code writing\n - Utilized components that trigger events when elements appear or disappear from the viewport",
+    },
+    {
+      mediaUrl: "images/doss.jpg",
+      title: "Lessons Learned",
+      subTitle: "Takeaway",
+      description:
+        "- Understanding user interactions needed in app environments\n - Understanding of Elasticsearch and backend environments (Controller, Service, Dao, Dto)\n - Understanding Figma design system planning",
+    },
+  ],
 ];
 
 export const slidesDataJP: SlideData[][] = [
@@ -363,6 +461,54 @@ export const slidesDataJP: SlideData[][] = [
       subTitle: "Takeaway",
       description:
         " - 会社との協業で学んだビジネスコミュニケーション\n - 問題解決のための根本原因の把握（サーボモーターのジッター）\n - モデルの活用度に応じた検出率の補完\n - 制限された環境で最適な選択をする方法の探求",
+    },
+  ],
+  [
+    {
+      mediaUrl: "videos/doss_promo.mp4",
+      title: "アプリインストール不要、ウェブでDoss",
+      subTitle:
+        "LG ユーレカ フロントエンド ミニプロジェクト (2025.03.13 ~ 2025.03.21) 9日間",
+      description: "\n- Tossコピーアプリ、株式情報をまとめて見るウェブサービス",
+      link: "https://youtu.be/vD-YFp99zmY?si=dT1TFnv6ajCU-NtQ",
+      linkTitle: "Youtube",
+    },
+    {
+      mediaUrl: "videos/doss_promo.mp4",
+      title: "役割",
+      subTitle: "チームリーダー（チーム全体：2名）",
+      description:
+        "- アプリのような使いやすさを重視、Figmaでデザイン制作\n - コンポーザブルUIスタイルでFEコンポーネント構造設計\n - プロモーション映像制作（Premiere Pro）\n - ファウンデーション作成後、フローチャートに沿ってプロトタイプ制作",
+      link: "https://www.figma.com/proto/Zpf6U1PgXsYQnZiomc2QSF/%EC%9C%A0%EB%A0%88%EC%B9%B4-3%ED%8C%80-MINI-PROJECT?node-id=132-4914&t=mBdT3P4pwjsJo7Ki-1",
+      linkTitle: "Figma",
+    },
+    {
+      mediaUrl: "images/doss_search.gif",
+      title: "検索結果オートコンプリートの実装",
+      subTitle: "Elasticsearch、デバウンシング",
+      description:
+        "- 0.3msごとのデバウンシングを適用してサーバーに検索語をリクエスト\n - Elasticsearch：株式検索に使用、6000件の株式情報（国内/海外）をElasticsearchに反映\n - Elasticsearchを通じて取得した株式銘柄コードによるリアルタイム価格確認機能",
+    },
+    {
+      mediaUrl: "images/doss_home.gif",
+      title: "韓国投資証券API連携リアルタイム株式情報",
+      subTitle: "Spring、Java",
+      description:
+        "- 韓国投資証券APIを活用して取引代金/取引量/急上昇/急落情報を照会\n - useEffectを通じてサーバーに株式情報をリクエスト\n - サーバーは1分以内であればキャッシュされたデータを送信し、1分単位で株価を更新\n - 今後Websocketで連携してリアルタイムで価格変動を反映予定",
+    },
+    {
+      mediaUrl: "images/doss_intro.gif",
+      title: "Tossライブラリの適用",
+      subTitle: "@toss/useFunnel、@toss/impression-area",
+      description:
+        "- 会員登録のファネル状態保存のために使用\n - 簡単な状態管理とクリーンなコード作成が可能\n - ビューポートに表示されたり消えたりする時点でイベントを発生させるコンポーネントを使用",
+    },
+    {
+      mediaUrl: "images/doss.jpg",
+      title: "学んだこと",
+      subTitle: "Takeaway",
+      description:
+        "- アプリ環境で必要なユーザーインタラクションの理解\n - Elasticsearchおよびバックエンド環境の理解（Controller、Service、Dao、Dto）\n - Figmaデザインシステム設計の理解",
     },
   ],
 ];

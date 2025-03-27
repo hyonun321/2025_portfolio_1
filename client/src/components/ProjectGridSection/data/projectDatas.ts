@@ -2,7 +2,7 @@ import { Project } from "@/components/ProjectGridSection/types";
 
 export const CATEGORIES = [
   { id: "all", label: "All", count: 2 },
-  { id: "react", label: "React", count: 1 },
+  { id: "react", label: "React", count: 2 },
   { id: "python", label: "Python", count: 1 },
 ];
 
@@ -49,6 +49,14 @@ export const projectsData: { [key: string]: Project[] } = {
       image: "images/speaker.jpg",
       description: "Python / Raspberry Pi / OpenCV / Haarcascade",
     },
+    {
+      id: 3,
+      title: "앱 설치 없이, 웹에서 Doss !",
+      technologies: ["React"],
+      image: "images/doss.jpg",
+      description:
+        "React / Typescript / NextJS / Java / Elastic Search / mySQL",
+    },
   ],
   EN: [
     {
@@ -65,6 +73,14 @@ export const projectsData: { [key: string]: Project[] } = {
       image: "images/speaker.jpg",
       description: "Python / Raspberry Pi / OpenCV / Haarcascade",
     },
+    {
+      id: 3,
+      title: "No Install like app, Using Doss At Web  !",
+      technologies: ["React"],
+      image: "images/doss.jpg",
+      description:
+        "React / Typescript / NextJS / Java / Elastic Search / mySQL",
+    },
   ],
   JP: [
     {
@@ -80,6 +96,14 @@ export const projectsData: { [key: string]: Project[] } = {
       technologies: ["Python"],
       image: "images/speaker.jpg",
       description: "Python / Raspberry Pi / OpenCV / Haarcascade",
+    },
+    {
+      id: 3,
+      title: "インストール なし, Webで Doss !",
+      technologies: ["React"],
+      image: "images/doss.jpg",
+      description:
+        "React / Typescript / NextJS / Java / Elastic Search / mySQL",
     },
   ],
 };
