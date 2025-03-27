@@ -135,27 +135,27 @@ export const skillCardsTranslations = {
           {
             imageSrc: "icons/nocta_day_icon.svg",
             alt: "Nocta Day Icon",
-            caption: "デイ아이콘",
+            caption: "デイIcon",
           },
           {
             imageSrc: "icons/nocta_night_icon.svg",
             alt: "Nocta Night Icon",
-            caption: "ナイト아이콘",
+            caption: "ナイトIcon",
           },
         ],
       },
     },
     card3: {
-      highlight: "Software",
-      title: "Development",
+      highlight: "ソフトウェア",
+      title: "開発",
       subtitle: "JavaScript, TypeScript, C",
-      description: "半導体SWエン지니어 경험",
+      description: "半導体SW エンジニアとしての経験",
       backContentData: {
         header:
-          "外資系半導体SW OS システムソフト웨어エン지니어 (2022.4~2023.6)",
+          "外資系半導体企業 SW OS システムソフトウェアエンジニア (22.4~23.6)",
         paragraphs: [
-          "- 顧客対応능력アンケートで 팀 4명 중 1위",
-          "- Recipe Management System의 개발",
+          "- 顧客対応能力アンケートで、チーム4名中1位",
+          "- レシピ管理システムの開発",
         ],
       },
     },
