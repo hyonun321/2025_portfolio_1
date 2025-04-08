@@ -150,7 +150,9 @@ export const slidesData: SlideData[][] = [
       title: "검색결과 자동완성 구현",
       subTitle: "엘라스틱 서치, 디바운싱 ",
       description:
-        "- 0.3ms 단위로 디바운싱 적용하여 서버에 검색어 요청 \n - 엘라스틱 서치: 주식 검색 사용, 6000개의 주식정보(국내/해외) 엘라스틱 서치에 반영 \n - 엘라스틱 서치를 통해 얻은 주식 종목코드를 통한 실시간 금액 확인 기능",
+        "- 0.3ms 단위로 디바운싱 적용하여 서버에 검색어 요청  \n - 엘라스틱 서치: 주식 검색 사용, 6000개의 주식정보(국내/해외) 엘라스틱 서치에 반영 \n - 엘라스틱 서치를 통해 얻은 주식 종목코드를 통한 실시간 금액 확인 기능 \n - MySQL과 엘라스틱 서치 비교글 작성",
+      link: "https://velog.io/@hyonun/%EC%97%98%EB%9D%BC%EC%8A%A4%ED%8B%B1%EC%84%9C%EC%B9%98-vs-MySQL-%EB%B9%84%EA%B5%90#%F0%9F%A7%AD-mysql-vs-%EC%97%98%EB%9D%BC%EC%8A%A4%ED%8B%B1-%EC%84%9C%EC%B9%98-%EB%B9%84%EA%B5%90",
+      linkTitle: "Blog",
     },
     {
       mediaUrl: "images/doss_home.gif",
@@ -160,7 +162,7 @@ export const slidesData: SlideData[][] = [
         " - 한국투자증권 API활용하여 거래대금/거래량/급상승/급하락 정보 조회\n - useEffect를 통해 서버에 주식정보 요청 \n - 서버는 1분 이내면 캐시된 데이터를 보내며 1분단위로 주식 가격을 갱신\n - 추후 Websocket 으로 연동하여 실시간으로 가격 변동 반영 예정",
     },
     {
-      mediaUrl: "images/doss_intro.gif",
+      mediaUrl: "images/doss_funnel.gif",
       title: "toss 라이브러리 적용 ",
       subTitle: "@toss/useFunnel, @toss/impression-area",
       description:
@@ -330,7 +332,7 @@ export const slidesDataEN: SlideData[][] = [
         "- Utilized Korea Investment Securities API to view trading volume/value and rapid rise/fall information\n - Used useEffect to request stock information from server\n - Server sends cached data if within 1 minute and updates stock prices every minute\n - Planning to implement Websocket connection for real-time price updates in the future",
     },
     {
-      mediaUrl: "images/doss_intro.gif",
+      mediaUrl: "images/doss_funnel.gif",
       title: "Implementation of Toss Libraries",
       subTitle: "@toss/useFunnel, @toss/impression-area",
       description:
@@ -497,7 +499,7 @@ export const slidesDataJP: SlideData[][] = [
         "- 韓国投資証券APIを活用して取引代金/取引量/急上昇/急落情報を照会\n - useEffectを通じてサーバーに株式情報をリクエスト\n - サーバーは1分以内であればキャッシュされたデータを送信し、1分単位で株価を更新\n - 今後Websocketで連携してリアルタイムで価格変動を反映予定",
     },
     {
-      mediaUrl: "images/doss_intro.gif",
+      mediaUrl: "images/doss_funnel.gif",
       title: "Tossライブラリの適用",
       subTitle: "@toss/useFunnel、@toss/impression-area",
       description:
