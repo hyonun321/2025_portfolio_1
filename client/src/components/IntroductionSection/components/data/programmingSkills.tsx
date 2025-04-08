@@ -7,7 +7,15 @@ import {
   SiStyledcomponents,
 } from "react-icons/si";
 
-export const skills = [
+export type ProficiencyLevel = "BASIC" | "INTERMEDIATE" | "COMFORTABLE";
+
+interface Skill {
+  name: string;
+  icon: React.ReactNode;
+  level: ProficiencyLevel;
+  color: string;
+}
+export const skills: Skill[] = [
   {
     name: "React",
     icon: <FaReact />,

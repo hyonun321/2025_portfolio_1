@@ -2,13 +2,19 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { skills } from "./data/programmingSkills";
+import { ProficiencyLevel, skills } from "./data/programmingSkills";
+
+interface ProficiencyInfo {
+  label: string;
+  color: string;
+  fillPercent: string;
+}
 
 export default function ProgrammingSkills() {
-  const containerRef = useRef(null);
-  const skillsRef = useRef([]);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const skillsRef = useRef<(HTMLDivElement | null)[]>([]);
 
-  const proficiencyLevels = {
+  const proficiencyLevels: Record<ProficiencyLevel, ProficiencyInfo> = {
     BASIC: { label: "BASIC", color: "bg-blue-400", fillPercent: "30%" },
     INTERMEDIATE: {
       label: "INTERMEDIATE",
@@ -47,7 +53,7 @@ export default function ProgrammingSkills() {
       { width: "0%" },
       {
         width: (i, target) => {
-          const level = target.dataset.level;
+          const level = target.dataset.level as ProficiencyLevel;
           return proficiencyLevels[level].fillPercent;
         },
         duration: 1.5,
@@ -76,7 +82,9 @@ export default function ProgrammingSkills() {
           return (
             <div
               key={skill.name}
-              ref={(el) => (skillsRef.current[index] = el)}
+              ref={(el) => {
+                skillsRef.current[index] = el;
+              }}
               className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 transition-all duration-300 hover:bg-gray-700/50 hover:transform hover:scale-105"
             >
               <div className="flex items-center mb-3">
