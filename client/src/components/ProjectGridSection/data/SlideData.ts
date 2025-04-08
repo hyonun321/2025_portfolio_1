@@ -64,7 +64,7 @@ export const slidesData: SlideData[][] = [
       linkTitle: "Notion",
     },
     {
-      mediaUrl: "images/nocta_edit.jpg",
+      mediaUrl: "images/nocta_feedback.JPG",
       title: "배운점",
       subTitle: "takeaway ",
       description:
