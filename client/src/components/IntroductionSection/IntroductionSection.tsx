@@ -7,7 +7,7 @@ import SkillCards from "./components/SkillCards";
 import MeProfileImage from "./components/MeProfileImage";
 import RotatingText from "./components/RotatingText";
 import IntroduceCard from "./components/IntroduceCard";
-
+import ProgrammingSkills from "./components/ProgrammingSkills";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function IntroductionSection() {
@@ -99,6 +99,7 @@ export default function IntroductionSection() {
               <MeProfileImage />
               <IntroduceCard />
             </div>
+            <ProgrammingSkills />
             <SkillCards />
           </div>
         </div>
