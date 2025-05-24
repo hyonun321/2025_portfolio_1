@@ -176,6 +176,59 @@ export const slidesData: SlideData[][] = [
         "- 앱환경에서 필요한 사용자 인터랙션의 이해 \n - 엘라스틱서치 및 백엔드 환경의 이해 (Controller, Service, Dao, Dto) \n - figma 디자인 시스템 설계 이해",
     },
   ],
+  [
+    {
+      mediaUrl: "images/jobthoughts.png",
+      title: "잡생각(JobThoughts)",
+      subTitle: "사용자의 성향을 기반으로 진로를 제안하는 채용 연계 서비스",
+      description:
+        "프론트엔드 미니 프로젝트 (2025.03) / 4인 협업 / 10일간 개발",
+      link: "https://www.canva.com/design/DAGm6Gp7AEs/RV6anLgGtHmjVq6RjZv9dw/view?utm_content=DA%5B%E2%80%A6%5Dhare&utm_medium=link2&utm_source=uniquelinks&utlId=h4543e21b68",
+      linkTitle: "Demo PDF",
+    },
+    {
+      mediaUrl: "videos/jobthoughts_2.mp4",
+      title: "첫 진입 애니메이션 구성",
+      subTitle: "Framer Motion / Sticky / Typography 연출",
+      description:
+        "- 스크롤 기반의 반응형 애니메이션 설계\n- 직관적인 직업 선택 흐름을 유도하는 인터랙티브 UI\n- sticky 섹션으로 서비스 이용 단계를 명확히 전달",
+    },
+    {
+      mediaUrl: "videos/jobthoughts_3.mp4",
+      title: "직업 가치관 검사 구현",
+      subTitle: "CareerNet API 연동 및 카드 선택형 테스트",
+      description:
+        "- 카드 슬라이드 전환 애니메이션 구현\n- 키보드 입력 기반 문항 선택 UX\n- 커리어넷 API 기반 직업 추천 데이터 파싱 처리",
+    },
+    {
+      mediaUrl: "images/jobthoughts_4.gif",
+      title: "검사 결과 시각화",
+      subTitle: "Nivo 라이브러리를 활용한 레이더 차트 구현",
+      description:
+        "- 선택한 직업군에 따른 가치관 점수 시각화\n- 사용자 클릭 시, 해당 직업의 채용공고로 연결\n- 향후 실제 채용정보 API 연동 예정",
+    },
+    {
+      mediaUrl: "videos/jobthoughts_5.mp4",
+      title: "반응형 설계 및 사용자 흐름 중심 UI",
+      subTitle: "전 디바이스 대응 및 인터랙션 최적화",
+      description:
+        "- 사용자 사용 흐름에 맞춘 컴포넌트 배치\n- 모바일/태블릿 대응을 위한 clamp, media query 적용\n- onClick, 키보드 입력 중심 UI/UX 구성",
+    },
+    {
+      mediaUrl: "images/jobthoughts_6.png",
+      title: "배포 및 크롤링 자동화",
+      subTitle: "Vercel / Render 배포, Puppeteer 기반 채용공고 수집",
+      description:
+        "- 프론트: Vercel / 백엔드: Render\n- Puppeteer로 채용 사이트 크롤링 테스트 경험\n- SEO 및 성능 최적화를 위한 SSR 고려",
+    },
+    {
+      mediaUrl: "images/jobthoughts_7.png",
+      title: "협업과 회고",
+      subTitle: "4인 팀워크 기반 프로젝트 수행",
+      description:
+        "- 컴포넌트 설계부터 데이터 흐름까지 협업 중심 개발\n- 기술 위키 정리 및 역할 분담에 따른 효율적인 작업 진행\n- 사용자에게 직업 선택이라는 명확한 목적 전달에 집중",
+    },
+  ],
 ];
 
 export const slidesDataEN: SlideData[][] = [
@@ -346,6 +399,60 @@ export const slidesDataEN: SlideData[][] = [
         "- Understanding user interactions needed in app environments\n - Understanding of Elasticsearch and backend environments (Controller, Service, Dao, Dto)\n - Understanding Figma design system planning",
     },
   ],
+  [
+    {
+      mediaUrl: "images/jobthoughts.png",
+      title: "JobThoughts",
+      subTitle:
+        "A job recommendation service based on user values and preferences",
+      description:
+        "Frontend mini project (Mar 2025) / Team of 4 / 10-day development",
+      link: "https://www.canva.com/design/DAGm6Gp7AEs/RV6anLgGtHmjVq6RjZv9dw/view?utm_content=DA%5B%E2%80%A6%5Dhare&utm_medium=link2&utm_source=uniquelinks&utlId=h4543e21b68",
+      linkTitle: "Demo PDF",
+    },
+    {
+      mediaUrl: "videos/jobthoughts_2.mp4",
+      title: "Intro Animation & User Flow Design",
+      subTitle: "Framer Motion / Sticky Sections / Typography Animation",
+      description:
+        "- Scroll-based responsive animation\n- Intuitive flow guiding job selection\n- Sticky animation used to represent service steps",
+    },
+    {
+      mediaUrl: "videos/jobthoughts_3.mp4",
+      title: "Career Value Test Implementation",
+      subTitle: "Card Deck UI / Keyboard Navigation / CareerNet API",
+      description:
+        "- Slide transition animation for card choices\n- Keyboard-based interaction\n- Integrated CareerNet API for real-time job recommendation",
+    },
+    {
+      mediaUrl: "images/jobthoughts_4.gif",
+      title: "Result Visualization",
+      subTitle: "Radar chart using Nivo",
+      description:
+        "- Visualized personal value alignment with jobs\n- Job click leads to recruitment page\n- Future plan: connect to live job openings",
+    },
+    {
+      mediaUrl: "videos/jobthoughts_5.mp4",
+      title: "Responsive UI Based on User Journey",
+      subTitle: "Fully mobile-friendly and interactive design",
+      description:
+        "- UI structured around user's behavior flow\n- Responsive styling with clamp, media queries\n- Supports both click and keyboard navigation",
+    },
+    {
+      mediaUrl: "images/jobthoughts_6.png",
+      title: "Deployment & Crawling Automation",
+      subTitle: "Deployed via Vercel & Render / Puppeteer experience",
+      description:
+        "- Frontend deployed with Vercel, backend with Render\n- Crawling experience using Puppeteer for job info\n- SEO and performance optimized",
+    },
+    {
+      mediaUrl: "images/jobthoughts_7.png",
+      title: "Teamwork and Reflections",
+      subTitle: "Efficient collaboration across 4 developers",
+      description:
+        "- Worked collaboratively from UI to backend\n- Shared tech documentation and design conventions\n- Focused on delivering clear career exploration flow",
+    },
+  ],
 ];
 
 export const slidesDataJP: SlideData[][] = [
@@ -511,6 +618,59 @@ export const slidesDataJP: SlideData[][] = [
       subTitle: "Takeaway",
       description:
         "- アプリ環境で必要なユーザーインタラクションの理解\n - Elasticsearchおよびバックエンド環境の理解（Controller、Service、Dao、Dto）\n - Figmaデザインシステム設計の理解",
+    },
+  ],
+  [
+    {
+      mediaUrl: "images/jobthoughts.png",
+      title: "JobThoughts（ジョブソート）",
+      subTitle: "ユーザーの価値観と好みに基づいた職業推薦サービス",
+      description:
+        "フロントエンドミニプロジェクト（2025年3月）/ 4人チーム / 開発期間10日",
+      link: "https://www.canva.com/design/DAGm6Gp7AEs/RV6anLgGtHmjVq6RjZv9dw/view?utm_content=DA%5B%E2%80%A6%5Dhare&utm_medium=link2&utm_source=uniquelinks&utlId=h4543e21b68",
+      linkTitle: "デモPDF",
+    },
+    {
+      mediaUrl: "videos/jobthoughts_2.mp4",
+      title: "イントロアニメーションとサービス導線",
+      subTitle: "Framer Motion / スティッキー / タイポグラフィ演出",
+      description:
+        "- スクロールに応じたレスポンシブアニメーション構成\n- 直感的な職業選択導線の提供\n- stickyで各ステップの流れを分かりやすく表示",
+    },
+    {
+      mediaUrl: "videos/jobthoughts_3.mp4",
+      title: "職業価値観テストの実装",
+      subTitle: "カードデッキUI / キーボード操作 / CareerNet API",
+      description:
+        "- スライドトランジションアニメーション付きのカードUI\n- キーボード入力で直感的な選択\n- CareerNet APIと連携しリアルタイム推薦",
+    },
+    {
+      mediaUrl: "images/jobthoughts_4.gif",
+      title: "診断結果の可視化",
+      subTitle: "Nivoレーダーチャートを使用",
+      description:
+        "- 自分の価値観に合った職業をレーダー形式で表示\n- 職業をクリックすると求人情報ページに遷移\n- 今後は実際の求人APIと連携予定",
+    },
+    {
+      mediaUrl: "videos/jobthoughts_5.mp4",
+      title: "ユーザー行動ベースのレスポンシブUI",
+      subTitle: "全デバイス対応・インタラクション最適化",
+      description:
+        "- ユーザーの行動導線に合わせたUI構成\n- clampやメディアクエリを活用してモバイル対応\n- クリックとキーボード操作の両方に対応",
+    },
+    {
+      mediaUrl: "images/jobthoughts_6.png",
+      title: "デプロイとクローリングの自動化",
+      subTitle: "Vercel・Render / Puppeteerで求人情報の収集",
+      description:
+        "- フロントエンドはVercel、バックエンドはRenderにデプロイ\n- PuppeteerでのWebクローリング実施\n- SEOとパフォーマンスを考慮した構成",
+    },
+    {
+      mediaUrl: "images/jobthoughts_7.png",
+      title: "チーム開発と振り返り",
+      subTitle: "4人での役割分担と共同作業",
+      description:
+        "- UI設計からAPI設計まで連携して開発\n- 技術Wikiとドキュメントを共有\n- ユーザーにわかりやすいキャリア探索体験を提供",
     },
   ],
 ];

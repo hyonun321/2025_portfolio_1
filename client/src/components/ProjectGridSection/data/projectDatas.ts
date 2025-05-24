@@ -57,6 +57,14 @@ export const projectsData: { [key: string]: Project[] } = {
       description:
         "React / Typescript / NextJS / Java / Elastic Search / mySQL",
     },
+    {
+      id: 4,
+      title: "잡생각(JobThoughts)",
+      technologies: ["React"],
+      image: "images/jobthoughts.png", // 실제 이미지 경로에 맞게 수정 필요
+      description:
+        "React / Typescript / Node.js / Express / Vite / CareerNet API",
+    },
   ],
   EN: [
     {
@@ -81,6 +89,14 @@ export const projectsData: { [key: string]: Project[] } = {
       description:
         "React / Typescript / NextJS / Java / Elastic Search / mySQL",
     },
+    {
+      id: 4,
+      title: "JobThoughts",
+      technologies: ["React"],
+      image: "images/jobthoughts.png",
+      description:
+        "React / Typescript / Node.js / Express / Vite / CareerNet API",
+    },
   ],
   JP: [
     {
@@ -104,6 +120,14 @@ export const projectsData: { [key: string]: Project[] } = {
       image: "images/doss.jpg",
       description:
         "React / Typescript / NextJS / Java / Elastic Search / mySQL",
+    },
+    {
+      id: 4,
+      title: "職業推薦サービス JobThoughts",
+      technologies: ["React"],
+      image: "images/jobthoughts.png",
+      description:
+        "React / Typescript / Node.js / Express / Vite / CareerNet API",
     },
   ],
 };
