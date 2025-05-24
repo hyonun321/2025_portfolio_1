@@ -1,8 +1,8 @@
 import { Project } from "@/components/ProjectGridSection/types";
 
 export const CATEGORIES = [
-  { id: "all", label: "All", count: 2 },
-  { id: "react", label: "React", count: 2 },
+  { id: "all", label: "All", count: 4 },
+  { id: "react", label: "React", count: 3 },
   { id: "python", label: "Python", count: 1 },
 ];
 
