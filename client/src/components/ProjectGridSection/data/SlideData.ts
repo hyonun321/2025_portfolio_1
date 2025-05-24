@@ -20,7 +20,7 @@ export const slidesData: SlideData[][] = [
         "연산기반 CRDT를 기반으로 한 실시간 동시편집 에디터  \n - 탭 브라우징으로 여러 페이지를 자유롭게 넘나들 수 있습니다. \n - 인터랙티브한 요소들로 재밌는 문서작성을 추구합니다. ",
       subTitle: "네이버 부스트캠프 Web 9기 그룹프로젝트 (2024.10 ~ 2024.12)",
       link: "https://nocta.site",
-      linkTitle: "View Site",
+      linkTitle: "Site",
       link2: "https://github.com/boostcampwm-2024/web33-Nocta",
       link2Title: "Github",
       link3: "https://youtu.be/0AZAixGrMbo?si=71fZcmKYb2AbAlkS",
@@ -185,6 +185,8 @@ export const slidesData: SlideData[][] = [
         "프론트엔드 미니 프로젝트 (2025.03) / 4인 협업 / 10일간 개발",
       link: "https://www.canva.com/design/DAGm6Gp7AEs/RV6anLgGtHmjVq6RjZv9dw/view?utm_content=DA%5B%E2%80%A6%5Dhare&utm_medium=link2&utm_source=uniquelinks&utlId=h4543e21b68",
       linkTitle: "Demo PDF",
+      link2: "https://job-thoughts-client.vercel.app/",
+      link2Title: "Site",
     },
     {
       mediaUrl: "videos/jobthoughts_2.mp4",
@@ -240,7 +242,7 @@ export const slidesDataEN: SlideData[][] = [
         "Real-time collaborative editor based on operational CRDT \n - Navigate freely through multiple pages with tab browsing. \n - Pursues engaging document creation with interactive elements.",
       subTitle: "Naver Boostcamp Web Batch 9 Group Project (2024.10 ~ 2024.12)",
       link: "https://nocta.site",
-      linkTitle: "View Site",
+      linkTitle: "Site",
       link2: "https://github.com/boostcampwm-2024/web33-Nocta",
       link2Title: "Github",
       link3: "https://youtu.be/0AZAixGrMbo?si=71fZcmKYb2AbAlkS",
@@ -409,6 +411,8 @@ export const slidesDataEN: SlideData[][] = [
         "Frontend mini project (Mar 2025) / Team of 4 / 10-day development",
       link: "https://www.canva.com/design/DAGm6Gp7AEs/RV6anLgGtHmjVq6RjZv9dw/view?utm_content=DA%5B%E2%80%A6%5Dhare&utm_medium=link2&utm_source=uniquelinks&utlId=h4543e21b68",
       linkTitle: "Demo PDF",
+      link2: "https://job-thoughts-client.vercel.app/",
+      link2Title: "Site",
     },
     {
       mediaUrl: "videos/jobthoughts_2.mp4",
@@ -465,7 +469,7 @@ export const slidesDataJP: SlideData[][] = [
       subTitle:
         "NAVER Boostcamp Web 第9期 グループプロジェクト (2024.10 ~ 2024.12)",
       link: "https://nocta.site",
-      linkTitle: "サイトを表示",
+      linkTitle: "Site",
       link2: "https://github.com/boostcampwm-2024/web33-Nocta",
       link2Title: "Github",
       link3: "https://youtu.be/0AZAixGrMbo?si=71fZcmKYb2AbAlkS",
@@ -629,6 +633,8 @@ export const slidesDataJP: SlideData[][] = [
         "フロントエンドミニプロジェクト（2025年3月）/ 4人チーム / 開発期間10日",
       link: "https://www.canva.com/design/DAGm6Gp7AEs/RV6anLgGtHmjVq6RjZv9dw/view?utm_content=DA%5B%E2%80%A6%5Dhare&utm_medium=link2&utm_source=uniquelinks&utlId=h4543e21b68",
       linkTitle: "デモPDF",
+      link2: "https://job-thoughts-client.vercel.app/",
+      link2Title: "Site",
     },
     {
       mediaUrl: "videos/jobthoughts_2.mp4",
