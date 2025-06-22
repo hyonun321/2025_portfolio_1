@@ -1,8 +1,8 @@
 import { Project } from "@/components/ProjectGridSection/types";
 
 export const CATEGORIES = [
-  { id: "all", label: "All", count: 4 },
-  { id: "react", label: "React", count: 3 },
+  { id: "all", label: "All", count: 5 },
+  { id: "react", label: "React", count: 4 },
   { id: "python", label: "Python", count: 1 },
 ];
 
@@ -65,6 +65,14 @@ export const projectsData: { [key: string]: Project[] } = {
       description:
         "React / Typescript / Node.js / Express / Vite / CareerNet API",
     },
+    {
+      id: 5,
+      title: "렛츠커리어",
+      technologies: ["React"],
+      image: "images/lets_career.png", // 이미지 경로는 실제 파일명에 맞게 수정 필요
+      description:
+        "React / Next.js / Zustand / Vercel / Typescript / TailwindCSS",
+    },
   ],
   EN: [
     {
@@ -97,6 +105,14 @@ export const projectsData: { [key: string]: Project[] } = {
       description:
         "React / Typescript / Node.js / Express / Vite / CareerNet API",
     },
+    {
+      id: 5,
+      title: "Let’sCareer",
+      technologies: ["React"],
+      image: "images/lets_career.png", // 실제 이미지 경로 필요
+      description:
+        "React / Next.js / Zustand / Vercel / Typescript / TailwindCSS",
+    },
   ],
   JP: [
     {
@@ -128,6 +144,14 @@ export const projectsData: { [key: string]: Project[] } = {
       image: "images/jobthoughts.png",
       description:
         "React / Typescript / Node.js / Express / Vite / CareerNet API",
+    },
+    {
+      id: 5,
+      title: "レッツキャリア",
+      technologies: ["React"],
+      image: "images/lets_career.png", // 실제 이미지 경로 필요
+      description:
+        "React / Next.js / Zustand / Vercel / Typescript / TailwindCSS",
     },
   ],
 };

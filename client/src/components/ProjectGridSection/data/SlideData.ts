@@ -231,6 +231,40 @@ export const slidesData: SlideData[][] = [
         "- 컴포넌트 설계부터 데이터 흐름까지 협업 중심 개발\n- 기술 위키 정리 및 역할 분담에 따른 효율적인 작업 진행\n- 사용자에게 직업 선택이라는 명확한 목적 전달에 집중",
     },
   ],
+  [
+    {
+      mediaUrl: "images/lets_career.png",
+      title: "렛츠커리어",
+      subTitle: "커리어 성장 취업 지원 웹 서비스  (2025.05 ~ 진행 중)",
+      description:
+        "- 커리어 정보 접근에 어려움을 겪는 취준생이 주도적으로 커리어를 설계할 수 있도록 돕는 플랫폼 \n- 커리어 정보 접근의 어려움을 겪는 취준생에게 맞춤형 지원 제공\n- 10,000명 이상 사용자 기반의 실사용 피드백 중심 개발 진행",
+      link: "https://www.letscareer.co.kr/",
+      linkTitle: "Site",
+      link2: "https://github.com/Let-s-intern/lets-intern-client",
+      link2Title: "Github",
+    },
+    {
+      mediaUrl: "videos/letscareer_1.mp4",
+      title: "컴포넌트 기반 UI 개발 및 QA 대응",
+      subTitle: "피그마 기반 컴포넌트 설계 / UI 재사용성 개선",
+      description:
+        "- 디자인 시스템을 기준으로 컴포넌트 설계 및 구현\n- QA 중 발견된 UI 오류에 빠르게 대응하며 반복 개선\n- 사용자 흐름과 상태 기반 화면 전환 및 충돌 방지 경험\n- 챌린지 페이지 구현을 통해 40명 이상의 사용자 참여 유도",
+    },
+    {
+      mediaUrl: "images/letscareer_2.PNG",
+      title: "Sprint 중심 협업 및 백오피스 설계",
+      subTitle: "PM/디자이너/BE와 협업하며 스프린트 기반 개발",
+      description:
+        "- GlobalNavigationBar 개선 \n - Jira 기반 이슈 트래킹과 ‘진행 상황 공유’ 문화 경험\n- BE와 API 연동, 실제 데이터 기반 백오피스 화면 구현\n- 운영팀/디자이너와 협업해 관리자 전용 기능 설계",
+    },
+    {
+      mediaUrl: "images/lets_career.png",
+      title: "배운점",
+      subTitle: "takeaway",
+      description:
+        "- 일정 준수를 위한 리소스 분배 및 협업 조율\n- 유저 중심 설계 관점에서의 프로덕트 개발\n- 컴포넌트 재사용성과 기능 확장을 고려한 개발 방식 학습",
+    },
+  ],
 ];
 
 export const slidesDataEN: SlideData[][] = [
@@ -457,6 +491,41 @@ export const slidesDataEN: SlideData[][] = [
         "- Worked collaboratively from UI to backend\n- Shared tech documentation and design conventions\n- Focused on delivering clear career exploration flow",
     },
   ],
+  [
+    {
+      mediaUrl: "images/lets_career.png",
+      title: "Let’s Career",
+      subTitle:
+        "A Career Growth & Employment Support Web Service (May 2025 – Ongoing)",
+      description:
+        "- A platform designed to help job seekers take the lead in shaping their careers despite limited access to information\n- Provides personalized support based on users' needs\n- Developed based on real user feedback from over 10,000 users",
+      link: "https://www.letscareer.co.kr/",
+      linkTitle: "Site",
+      link2: "https://github.com/Let-s-intern/lets-intern-client",
+      link2Title: "GitHub",
+    },
+    {
+      mediaUrl: "videos/letscareer_1.mp4",
+      title: "Component-Based UI Development & QA Handling",
+      subTitle: "Figma-Based Design / Enhanced UI Reusability",
+      description:
+        "- Built UI components based on a design system for consistency\n- Actively addressed and iterated on UI issues found during QA\n- Implemented user-state-driven page transitions to avoid flow conflicts\n- Designed the Challenge page to successfully attract over 40 users",
+    },
+    {
+      mediaUrl: "images/letscareer_2.PNG",
+      title: "Sprint-Based Collaboration & Back Office Design",
+      subTitle: "Cross-Team Development with PM, Designers, and Backend",
+      description:
+        "- Improved the Global Navigation Bar based on user feedback\n- Experienced agile development using Jira to manage tasks and share progress\n- Integrated backend APIs and implemented data-driven admin pages\n- Collaborated with the operations and design teams to build admin tools",
+    },
+    {
+      mediaUrl: "images/lets_career.png",
+      title: "Takeaways",
+      subTitle: "Key Learnings",
+      description:
+        "- Learned to allocate resources effectively to meet tight deadlines\n- Understood the importance of user-centered product design\n- Focused on scalable development by prioritizing component reusability and flexibility",
+    },
+  ],
 ];
 
 export const slidesDataJP: SlideData[][] = [
@@ -677,6 +746,40 @@ export const slidesDataJP: SlideData[][] = [
       subTitle: "4人での役割分担と共同作業",
       description:
         "- UI設計からAPI設計まで連携して開発\n- 技術Wikiとドキュメントを共有\n- ユーザーにわかりやすいキャリア探索体験を提供",
+    },
+  ],
+  [
+    {
+      mediaUrl: "images/lets_career.png",
+      title: "レッツキャリア",
+      subTitle: "キャリア成長・就職支援のためのWebサービス（2025.05〜進行中）",
+      description:
+        "- キャリア情報へのアクセスが困難な就活生が、自主的にキャリアを設計できるよう支援するプラットフォーム\n- 就活生に合わせたパーソナライズドな支援を提供\n- 実際のユーザーフィードバック（累計10,000人以上）を基にした継続的な改善を実施",
+      link: "https://www.letscareer.co.kr/",
+      linkTitle: "サイト",
+      link2: "https://github.com/Let-s-intern/lets-intern-client",
+      link2Title: "GitHub",
+    },
+    {
+      mediaUrl: "videos/letscareer_1.mp4",
+      title: "コンポーネントベースのUI開発およびQA対応",
+      subTitle: "Figmaに基づいた設計 / UI再利用性の向上",
+      description:
+        "- デザインシステムに基づくコンポーネント設計および実装\n- QA中に発見されたUIの不具合を迅速に対応・改善\n- ユーザーの動線と状態に応じた画面遷移およびバグ回避設計\n- チャレンジページの実装を通じて、40人以上のユーザー参加を促進",
+    },
+    {
+      mediaUrl: "images/letscareer_2.PNG",
+      title: "スプリント中心の協業およびバックオフィス設計",
+      subTitle: "PM・デザイナー・BEとの連携による開発",
+      description:
+        "- Global Navigation Barの改善\n- Jiraを活用したタスク管理および進行状況の共有文化を体験\n- BEのAPIと連携し、実データに基づいたバックオフィス画面を実装\n- 運営チームおよびデザイナーと連携し、管理者向け機能の設計を実施",
+    },
+    {
+      mediaUrl: "images/lets_career.png",
+      title: "学んだこと",
+      subTitle: "Takeaway",
+      description:
+        "- スケジュール遵守のためのリソース配分および協業調整スキルの習得\n- ユーザー視点に立ったプロダクト設計の重要性を認識\n- 再利用可能なコンポーネント設計および拡張性を考慮した開発方式の理解",
     },
   ],
 ];
