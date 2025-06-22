@@ -17,12 +17,12 @@ export function SkillCardFront({
   bgColorClass: string;
 }) {
   return (
-    <div className="flex flex-col gap-4 h-full p-6 bg-zinc-900/50 border justify-center z-10 hover:bg-white/10">
-      <div className="flex flex-row gap-4 justify-center">
+    <div className="flex flex-col gap-0 md:gap-4 h-full p-6 bg-zinc-900/50 border justify-center z-10 hover:bg-white/10">
+      <div className="flex flex-row gap-2 md:gap-4 justify-center">
         <Icon
-          size={60}
+          size={50}
           className="text-white"
-          style={{ fontSize: "clamp(2rem, 5vw, 3rem)" }}
+          style={{ fontSize: "clamp(2rem, 5vw, 1rem)" }}
         />
         <h2 className="text-xl sm:text-lg xl:text-3xl font-bold text-white">
           <div className="relative inline-block">
@@ -38,7 +38,7 @@ export function SkillCardFront({
       <div className="flex flex-col">
         <p className="text-gray-500">{`<h3>`}</p>
         <div className="border-l-2 border-gray-500 pl-4 ml-4 mt-2 mb-2">
-          <h3 className="text-base sm:text-lg xl:text-xl text-white">
+          <h3 className="text-base sm:text-md xl:text-xl text-white">
             {subtitle}
           </h3>
           <p className="text-sm sm:text-base xl:text-lg text-gray-300">
