@@ -59,7 +59,7 @@ export default function ProgrammingSkills() {
         duration: 1.5,
         stagger: 0.1,
         ease: "power2.out",
-        delay: 2.4,
+        delay: 3,
       }
     );
 
