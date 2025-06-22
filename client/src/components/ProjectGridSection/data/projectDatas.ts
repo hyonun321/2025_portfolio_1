@@ -36,26 +36,19 @@ export const translations = {
 export const projectsData: { [key: string]: Project[] } = {
   KR: [
     {
+      id: 5,
+      title: "렛츠커리어",
+      technologies: ["React"],
+      image: "images/lets_career.png", // 이미지 경로는 실제 파일명에 맞게 수정 필요
+      description:
+        "React / Next.js / Zustand / Vercel / Typescript / TailwindCSS",
+    },
+    {
       id: 1,
       title: "실시간 동시편집 에디터 Nocta",
       technologies: ["React"],
       image: "images/nocta_inform.jpg",
       description: "React / Typescript / Vite / PandaCSS / Zustand",
-    },
-    {
-      id: 2,
-      title: "얼굴 추적 지향성 스피커",
-      technologies: ["Python"],
-      image: "images/speaker.jpg",
-      description: "Python / Raspberry Pi / OpenCV / Haarcascade",
-    },
-    {
-      id: 3,
-      title: "앱 설치 없이, 웹에서 Doss !",
-      technologies: ["React"],
-      image: "images/doss.jpg",
-      description:
-        "React / Typescript / NextJS / Java / Elastic Search / mySQL",
     },
     {
       id: 4,
@@ -66,12 +59,19 @@ export const projectsData: { [key: string]: Project[] } = {
         "React / Typescript / Node.js / Express / Vite / CareerNet API",
     },
     {
-      id: 5,
-      title: "렛츠커리어",
+      id: 3,
+      title: "앱 설치 없이, 웹에서 Doss !",
       technologies: ["React"],
-      image: "images/lets_career.png", // 이미지 경로는 실제 파일명에 맞게 수정 필요
+      image: "images/doss.jpg",
       description:
-        "React / Next.js / Zustand / Vercel / Typescript / TailwindCSS",
+        "React / Typescript / NextJS / Java / Elastic Search / mySQL",
+    },
+    {
+      id: 2,
+      title: "얼굴 추적 지향성 스피커",
+      technologies: ["Python"],
+      image: "images/speaker.jpg",
+      description: "Python / Raspberry Pi / OpenCV / Haarcascade",
     },
   ],
   EN: [
@@ -112,6 +112,14 @@ export const projectsData: { [key: string]: Project[] } = {
       image: "images/lets_career.png", // 실제 이미지 경로 필요
       description:
         "React / Next.js / Zustand / Vercel / Typescript / TailwindCSS",
+    },
+
+    {
+      id: 2,
+      title: "얼굴 추적 지향성 스피커",
+      technologies: ["Python"],
+      image: "images/speaker.jpg",
+      description: "Python / Raspberry Pi / OpenCV / Haarcascade",
     },
   ],
   JP: [
