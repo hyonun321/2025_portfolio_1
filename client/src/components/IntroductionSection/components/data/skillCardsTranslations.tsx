@@ -14,40 +14,30 @@ export const skillCardsTranslations = {
       },
     },
     card2: {
-      highlight: "Web Design",
-      title: "Lotties, Figma",
-      subtitle: "로티 애니메이션 아이콘 제작",
-      description: "아이콘 디자인 경험",
+      highlight: "Communication",
+      title: "Collaboration",
+      subtitle: "긍정적이고 밝은 성격, 원활한 소통",
+      description: "팀워크와 커뮤니케이션 역량",
       backContentData: {
-        items: [
-          {
-            imageSrc: "images/nocta_night_gif.gif",
-            alt: "Nocta Night Animation",
-            caption: "Night GIF",
-          },
-          {
-            imageSrc: "icons/nocta_day_icon.svg",
-            alt: "NocTa Day Icon",
-            caption: "Day Icon",
-          },
-          {
-            imageSrc: "icons/nocta_night_icon.svg",
-            alt: "NocTa Night Icon",
-            caption: "Night Icon",
-          },
+        header: "커뮤니케이션 & 협업",
+        paragraphs: [
+          "- 열린 피드백과 공감 기반 커뮤니케이션",
+          "- 회의록·결정사항 신속 정리 및 공유",
         ],
       },
     },
     card3: {
-      highlight: "Software",
-      title: "Development",
-      subtitle: "JavaScript, TypeScript, C",
-      description: "반도체 SW 엔지니어 경험",
+      highlight: "Knowledge Sharing",
+      title: "Documentation",
+      subtitle: "트러블슈팅 문서화, 팀 위키, 기술 블로그",
+      description: "문서화·지식공유 중심의 문제해결형 개발자",
       backContentData: {
-        header: "외국계 반도체 SW OS System Software Engineer (22.4~23.6)",
+        header: "문서화·지식공유",
         paragraphs: [
-          "- 고객응대능력 설문, 팀 4명 중 1등",
-          "- Recipe Management System 개발",
+          "- 트러블슈팅 발생 시 타임라인·원인·조치안을 즉시 문서화",
+          "- 팀 위키/Notion에 사례를 자주 공유, 기술 공유를 즐김",
+          "- 6주간 기술 위키 30개 작성",
+          "- 개인 기술 블로그 운영",
         ],
       },
     },
@@ -67,41 +57,33 @@ export const skillCardsTranslations = {
       },
     },
     card2: {
-      highlight: "Web Design",
-      title: "Lotties, Figma",
-      subtitle: "Lottie Animation Icon Creation",
-      description: "Icon Design Experience",
+      highlight: "Communication",
+      title: "Collaboration",
+      subtitle: "Positive, bright, and clear communicator",
+      description: "Strong teamwork and communication skills",
       backContentData: {
-        items: [
-          {
-            imageSrc: "images/nocta_night_gif.gif",
-            alt: "Nocta Night Animation",
-            caption: "Night GIF",
-          },
-          {
-            imageSrc: "icons/nocta_day_icon.svg",
-            alt: "Nocta Day Icon",
-            caption: "Day Icon",
-          },
-          {
-            imageSrc: "icons/nocta_night_icon.svg",
-            alt: "Nocta Night Icon",
-            caption: "Night Icon",
-          },
+        header: "Communication & Collaboration",
+        paragraphs: [
+          "- Open, empathetic communication with constructive feedback",
+          "- Quickly document/share meeting notes and decisions",
+          "- Calm coordination and conflict mediation during incidents",
+          "- Prefer async collaboration: share context via docs/comments",
         ],
       },
     },
     card3: {
-      highlight: "Software",
-      title: "Development",
-      subtitle: "JavaScript, TypeScript, C",
-      description: "Semiconductor SW Engineer Experience",
+      highlight: "Knowledge Sharing",
+      title: "Documentation",
+      subtitle: "Incident Docs, Team Wiki, Tech Blog",
+      description:
+        "Documentation- and knowledge-sharing oriented problem solver",
       backContentData: {
-        header:
-          "Semiconductor SW OS System Software Engineer (Apr 2022 ~ Jun 2023)",
+        header: "Documentation & Knowledge Sharing",
         paragraphs: [
-          "- Ranked 1st among 4 team members in customer service ability survey",
-          "- Developed a Recipe Management System",
+          "- Document incident timeline, root cause, and fix immediately to prevent regressions",
+          "- Share cases frequently on team wiki/Notion; passionate about tech knowledge sharing",
+          "- Wrote 30 wiki articles in 6 weeks",
+          "- Run a personal tech blog",
         ],
       },
     },
@@ -121,41 +103,32 @@ export const skillCardsTranslations = {
       },
     },
     card2: {
-      highlight: "Web Design",
-      title: "Lotties, Figma",
-      subtitle: "ロッティアニメーションアイコン制作",
-      description: "アイコンデザイン経験",
+      highlight: "コミュニケーション",
+      title: "コラボレーション",
+      subtitle: "前向きで明るく、わかりやすい伝達",
+      description: "チームワークとコミュニケーションに強み",
       backContentData: {
-        items: [
-          {
-            imageSrc: "images/nocta_night_gif.gif",
-            alt: "Nocta Night Animation",
-            caption: "ナイトGIF",
-          },
-          {
-            imageSrc: "icons/nocta_day_icon.svg",
-            alt: "Nocta Day Icon",
-            caption: "デイIcon",
-          },
-          {
-            imageSrc: "icons/nocta_night_icon.svg",
-            alt: "Nocta Night Icon",
-            caption: "ナイトIcon",
-          },
+        header: "コミュニケーション＆コラボレーション",
+        paragraphs: [
+          "- オープンで共感的な対話と建設的なフィードバック",
+          "- 議事録・決定事項を迅速に整理/共有",
+          "- インシデント時も落ち着いて調整・コンフリクトを仲裁",
+          "- 非同期協業を重視（ドキュメント/コメントで文脈共有）",
         ],
       },
     },
     card3: {
-      highlight: "ソフトウェア",
-      title: "開発",
-      subtitle: "JavaScript, TypeScript, C",
-      description: "半導体SW エンジニアとしての経験",
+      highlight: "ナレッジシェア",
+      title: "ドキュメンテーション",
+      subtitle: "インシデント文書, チームWiki, 技術ブログ",
+      description: "文書化・知識共有を重視する問題解決型エンジニア",
       backContentData: {
-        header:
-          "外資系半導体企業 SW OS システムソフトウェアエンジニア (22.4~23.6)",
+        header: "ドキュメンテーションとナレッジシェア",
         paragraphs: [
-          "- 顧客対応能力アンケートで、チーム4名中1位",
-          "- レシピ管理システムの開発",
+          "- 障害/トラブル発生時、タイムライン・原因・対処を即時にドキュメント化",
+          "- チームWiki/Notionで頻繁に共有し、技術共有が好き",
+          "- 6週間で技術Wikiを30本作成",
+          "- 個人の技術ブログを運用",
         ],
       },
     },

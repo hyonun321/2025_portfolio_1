@@ -36,6 +36,13 @@ export const translations = {
 export const projectsData: { [key: string]: Project[] } = {
   KR: [
     {
+      id: 6,
+      title: "미플러스",
+      technologies: ["React"],
+      image: "images/meplus.gif", // 이미지 경로는 실제 파일명에 맞게 수정 필요
+      description: "React / Vite / Zustand / Vercel / Typescript / TailwindCSS",
+    },
+    {
       id: 5,
       title: "렛츠커리어",
       technologies: ["React"],
@@ -43,13 +50,7 @@ export const projectsData: { [key: string]: Project[] } = {
       description:
         "React / Next.js / Zustand / Vercel / Typescript / TailwindCSS",
     },
-    {
-      id: 1,
-      title: "실시간 동시편집 에디터 Nocta",
-      technologies: ["React"],
-      image: "images/nocta_inform.jpg",
-      description: "React / Typescript / Vite / PandaCSS / Zustand",
-    },
+
     {
       id: 4,
       title: "잡생각(JobThoughts)",
@@ -72,6 +73,13 @@ export const projectsData: { [key: string]: Project[] } = {
       technologies: ["Python"],
       image: "images/speaker.jpg",
       description: "Python / Raspberry Pi / OpenCV / Haarcascade",
+    },
+    {
+      id: 1,
+      title: "실시간 동시편집 에디터 Nocta",
+      technologies: ["React"],
+      image: "images/nocta_inform.jpg",
+      description: "React / Typescript / Vite / PandaCSS / Zustand",
     },
   ],
   EN: [
@@ -113,13 +121,12 @@ export const projectsData: { [key: string]: Project[] } = {
       description:
         "React / Next.js / Zustand / Vercel / Typescript / TailwindCSS",
     },
-
     {
-      id: 2,
-      title: "얼굴 추적 지향성 스피커",
-      technologies: ["Python"],
-      image: "images/speaker.jpg",
-      description: "Python / Raspberry Pi / OpenCV / Haarcascade",
+      id: 6,
+      title: "Meplus",
+      technologies: ["React"],
+      image: "images/meplus.gif", // 이미지 경로는 실제 파일명에 맞게 수정 필요
+      description: "React / Vite / Zustand / Vercel / Typescript / TailwindCSS",
     },
   ],
   JP: [
@@ -160,6 +167,13 @@ export const projectsData: { [key: string]: Project[] } = {
       image: "images/lets_career.png", // 실제 이미지 경로 필요
       description:
         "React / Next.js / Zustand / Vercel / Typescript / TailwindCSS",
+    },
+    {
+      id: 6,
+      title: "Meplus",
+      technologies: ["React"],
+      image: "images/meplus.gif", // 이미지 경로는 실제 파일명에 맞게 수정 필요
+      description: "React / Vite / Zustand / Vercel / Typescript / TailwindCSS",
     },
   ],
 };

@@ -1,32 +1,32 @@
 export const experiencesData: { [key: string]: Experience[] } = {
   KR: [
     {
-      title: "System Software Engineer",
-      period: "2022 - 2023",
+      title: "토스증권 프론트엔드 디벨로퍼 어시스턴트",
+      period: "2025.08 ~",
       description:
-        "반도체 테스트 핸들러 OS SW 엔지니어\n1. Recipe Management System 개발로 작업능률 3배 상승\n2. Git 및 KanbanBoard 도입하여 매뉴얼 배포\n3. 적극적이고 밝은 응대능력으로, 고객사 2개 중 1사 최고만족 달성\n4. 고객응대능력 설문 4명 중 1위 (2022~2023)",
-      location: "천안",
-      techStack: ["C", "C#", "Windows", "Git", "BitBucket"],
+        "토스증권 프론트엔드 디벨로퍼 어시스턴트\n1. S3 Object Storage Browser 서비스 프론트엔드 개발/운영\n2. TypeScript, Next.js, Zustand, TanStack Query 기반 상태/데이터 관리\n3. 사용자 경험 개선 및 성능 최적화",
+      location: "강남",
+      techStack: ["TypeScript", "Next.js", "Zustand", "TanStack Query"],
     },
   ],
   EN: [
     {
-      title: "System Software Engineer",
-      period: "2022 - 2023",
+      title: "Frontend Developer Assistant, Toss Securities",
+      period: "Aug 2025 – Present",
       description:
-        "Semiconductor Test Handler OS SW Engineer\n1. Developed a Recipe Management System, tripling work efficiency\n2. Introduced Git and Kanban Board for manual distribution\n3. Achieved highest customer satisfaction in one out of two companies through proactive and positive communication\n4. Ranked 1st among 4 in a customer service survey (2022-2023)",
-      location: "Cheonan",
-      techStack: ["C", "C#", "Windows", "Git", "BitBucket"],
+        "Working on the S3 Object Storage Browser service\n1. Frontend development and operation\n2. State and data management with TypeScript, Next.js, Zustand, and TanStack Query\n3. UX improvements and performance optimization",
+      location: "Gangnam",
+      techStack: ["TypeScript", "Next.js", "Zustand", "TanStack Query"],
     },
   ],
   JP: [
     {
-      title: "システムソフトウェアエンジニア",
-      period: "2022 - 2023",
+      title: "トス証券 フロントエンドディベロッパーアシスタント",
+      period: "2025.08 〜",
       description:
-        "半導体テストハンドラー OS SWエンジニア\n1. Recipe Management Systemの開発により作業効率が3倍に向上\n2. GitとKanban Boardを導入してマニュアル配布を実施\n3. 積極的で明るい対応により、2社中1社で最高の顧客満足を達成\n4. 顧客対応能力調査で4名中1位 (2022〜2023)",
-      location: "チョナン",
-      techStack: ["C", "C#", "Windows", "Git", "BitBucket"],
+        "S3 Object Storage Browser サービスに従事\n1. フロントエンドの開発・運用\n2. TypeScript, Next.js, Zustand, TanStack Query による状態/データ管理\n3. UX向上とパフォーマンス最適化",
+      location: "カンナム",
+      techStack: ["TypeScript", "Next.js", "Zustand", "TanStack Query"],
     },
   ],
 };

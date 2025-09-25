@@ -265,6 +265,15 @@ export const slidesData: SlideData[][] = [
         "- 일정 준수를 위한 리소스 분배 및 협업 조율\n- 유저 중심 설계 관점에서의 프로덕트 개발\n- 컴포넌트 재사용성과 기능 확장을 고려한 개발 방식 학습",
     },
   ],
+  [
+    {
+      mediaUrl: "images/meplus.gif",
+      title: "MePlus",
+      subTitle: "Backend Architecture · OpenAI Lead",
+      description:
+        "- Plan recommendation chatbot service\n- Established a baseline by comparing full prompt calls vs DB lookups\n- Targeting responses within 4 turns: succeeded in 29 out of 32 tests\n- Response time 32s -> 23s (-9s), tokens 7,500 -> 6,200\n- Automatically asks necessary follow-up questions via OpenAI Function Calling\n- Fast interactions with carousel button click inputs (Yes/No, etc.)",
+    },
+  ],
 ];
 
 export const slidesDataEN: SlideData[][] = [
@@ -526,6 +535,15 @@ export const slidesDataEN: SlideData[][] = [
         "- Learned to allocate resources effectively to meet tight deadlines\n- Understood the importance of user-centered product design\n- Focused on scalable development by prioritizing component reusability and flexibility",
     },
   ],
+  [
+    {
+      mediaUrl: "images/meplus.gif",
+      title: "ミプラス",
+      subTitle: "バックエンド設計・OpenAI担当",
+      description:
+        "- 料金プラン推薦チャットボットサービス\n- プロンプトのフル呼び出しとDB参照の比較でベースラインを確立\n- 4ターン以内の応答を目標に、32回のテスト中29回成功\n- 応答時間 32秒 -> 23秒（9秒短縮）、トークン 7,500 -> 6,200\n- OpenAI Function Calling に基づく逆質問で必要情報を自動取得\n- カルーセルボタン（はい/いいえ等）のクリック入力で迅速なインタラクション",
+    },
+  ],
 ];
 
 export const slidesDataJP: SlideData[][] = [
@@ -551,7 +569,7 @@ export const slidesDataJP: SlideData[][] = [
         " - ページ、ブロック、テキストを持つ多重リンクリストでデータ構造を構築\n - RGAに基づく二重リンクリストでCRDTを設計し、テキストブロックもリンクリストで順序変更可能\n - EditorCRDTとBlockCRDTの分離によるモジュール化で保守性を強化\n - ブロック単位の同期方式を導入し、大規模な文書処理時の拡張性を確保\n - @noctaCrdtの名前でpnpmモノレポジトリを構築し、ReactおよびNest.jsからアクセス可能に設定",
       subTitle:
         "中央サーバーに依存しない演算ベースのCRDT (Conflict-free Replicated Data Type)",
-      link: "https://velog.io/@hyonun/CRDT-구현-여정기-1-CRDT를-사용하고-구현방식을-정해보자",
+      link: "https://velog.io/@hyonun/CRDT-구현-여정기-1-CRDTを-使用して-実装方式を-決めよう",
       linkTitle: "ブログを見る",
     },
     {
@@ -561,7 +579,7 @@ export const slidesDataJP: SlideData[][] = [
         "ユーザーごとのワークスペースアクセス権限システムの設計および実装",
       description:
         " - WebSocketを利用したページごとのリアルタイム多重接続管理と状態同期\n - Socket.ioを活用したリアルタイム通知システム（Toast）でコラボレーション体験を向上",
-      link: "https://velog.io/@hyonun/Socket.io-Workspace-구현-여정기-1-게스트-유저-Workspace-분리화",
+      link: "https://velog.io/@hyonun/Socket.io-Workspace-구현-여정기-1-ゲスト-ユーザー-Workspace-分離化",
       linkTitle: "ブログを見る",
     },
     {
@@ -606,7 +624,7 @@ export const slidesDataJP: SlideData[][] = [
       title: "Haarcascadeアルゴリズムの選定",
       subTitle: "OpenCVを活用した顔特徴分類カスケードオブジェクト検出器",
       description:
-        " - Yolo v3、CNN、DNNに比べ、Raspbian（2CPU, 2GB）という制約のある環境でも十分な顔追跡率と高速性を実現\n - frontalfaceとprofilefaceのXMLデータセットを同時に活用し、顔検出率を向上\n (同一人物が出演する映像で顔検出が15%増加)",
+        "- Yolo v3、CNN、DNNに比べ、Raspbian（2CPU, 2GB）という制約のある環境でも十分な顔追跡率と高速性を実現\n - frontalfaceとprofilefaceのXMLデータセットを同時に活用し、顔検出率を向上\n (同一人物が出演する映像で顔検出が15%増加)",
     },
     {
       mediaUrl: "images/speaker_3D_modeling.JPG",
@@ -614,35 +632,35 @@ export const slidesDataJP: SlideData[][] = [
       subTitle:
         "構成 : Raspbian、超音波スピーカー、MG996R 2台、3Dモデリング、電源ケーブル",
       description:
-        " - 指向性スピーカー会社と協力し、3Dモデリングを考案、全体のSWアルゴリズムおよびHW環境を実装\n - MG996Rサーボモーターでスピーカーを支え、Raspberry Piを固定",
+        "- 指向性スピーカー会社と協力し、3Dモデリングを考案、全体のSWアルゴリズムおよびHW環境を実装\n - MG996Rサーボモーターでスピーカーを支え、Raspberry Piを固定",
     },
     {
       mediaUrl: "videos/speaker_jittering.mp4",
       title: "問題解決の経験",
       subTitle: "サーボモーターが不安定な電圧により振動するJittering現象",
       description:
-        " - 追加の電源供給などの対策があったが、既存のデザインを活用するためにpigpiodデーモンを使用\n - CPUにサーボモーター用のスレッドを割り当て、OSの処理がサーボモーターに影響を与えないように対策",
+        "- 追加の電源供給などの対策があったが、既存のデザインを活用するためにpigpiodデーモンを使用\n - CPUにサーボモーター用のスレッドを割り当て、OSの処理がサーボモーターに影響を与えないように対策",
     },
     {
       mediaUrl: "videos/speaker_tracking_face.mp4",
       title: "簡単なデモ映像",
       subTitle: "向かい合うと音が聞こえる指向性スピーカーの特性を活用",
       description:
-        " - 毎秒4フレームの速度でユーザーの顔を追跡\n - 5秒間顔が検出されなければ初期位置にリセット\n - 正面が検出されなければ横顔検出を試みる",
+        "- 毎秒4フレームの速度でユーザーの顔を追跡\n - 5秒間顔が検出されなければ初期位置にリセット\n - 正面が検出されなければ横顔検出を試みる",
     },
     {
       mediaUrl: "videos/speaker_tracking_face.mp4",
       title: "聴覚障害のある学生へのアンケート実施",
       subTitle: "室内で15分間、歌や会話に応じた音の集中度テスト",
       description:
-        " - 聴覚障害のある方は、直接的に感じる音に集中しやすく、ささやき声や小さい音には反応しにくい\n - 本作品は、顔の位置に関係なくスピーカーに集中できる音を提供し、正確な音を伝えると判断された",
+        "- 聴覚障害のある方は、直接的に感じる音に集中しやすく、ささやき声や小さい音には反応しにくい\n - 本作品は、顔の位置に関係なくスピーカーに集中できる音を提供し、正確な音を伝えると判断された",
     },
     {
       mediaUrl: "videos/speaker_tracking_face.mp4",
       title: "学んだこと",
       subTitle: "Takeaway",
       description:
-        " - 会社との協業で学んだビジネスコミュニケーション\n - 問題解決のための根本原因の把握（サーボモーターのジッター）\n - モデルの活用度に応じた検出率の補完\n - 制限された環境で最適な選択をする方法の探求",
+        "- 会社との協業で学んだビジネスコミュニケーション\n - 問題解決のための根本原因の把握（サーボモーターのジッター）\n - モデルの活用度に応じた検出率の補完\n - 制限された環境で最適な選択をする方法の探求",
     },
   ],
   [
@@ -699,7 +717,7 @@ export const slidesDataJP: SlideData[][] = [
       title: "JobThoughts（ジョブソート）",
       subTitle: "ユーザーの価値観と好みに基づいた職業推薦サービス",
       description:
-        "フロントエンドミニプロジェクト（2025年3月）/ 4人チーム / 開発期間10日",
+        "フロントエンドミニプロジェクト（Mar 2025) / 4人チーム / 10日間の開発",
       link: "https://www.canva.com/design/DAGm6Gp7AEs/RV6anLgGtHmjVq6RjZv9dw/view?utm_content=DA%5B%E2%80%A6%5Dhare&utm_medium=link2&utm_source=uniquelinks&utlId=h4543e21b68",
       linkTitle: "デモPDF",
       link2: "https://job-thoughts-client.vercel.app/",
@@ -780,6 +798,15 @@ export const slidesDataJP: SlideData[][] = [
       subTitle: "Takeaway",
       description:
         "- スケジュール遵守のためのリソース配分および協業調整スキルの習得\n- ユーザー視点に立ったプロダクト設計の重要性を認識\n- 再利用可能なコンポーネント設計および拡張性を考慮した開発方式の理解",
+    },
+  ],
+  [
+    {
+      mediaUrl: "images/meplus.gif",
+      title: "미플러스",
+      subTitle: "백엔드 설계 · OpenAI 담당",
+      description:
+        "- 요금제 추천 챗봇 서비스\n- 프롬프트 전체 호출 vs DB 조회 비교로 베이스라인 수립\n- 4턴 내 응답 목표로 32회 테스트 중 29회 성공\n- 응답 시간 32초 -> 23초 (9초 단축), 토큰 7,500 -> 6,200\n- OpenAI Function Calling 기반 역질문으로 필요한 정보 자동 질의\n- 캐러셀 버튼(예/아니요 등) 클릭 입력으로 빠른 상호작용",
     },
   ],
 ];
