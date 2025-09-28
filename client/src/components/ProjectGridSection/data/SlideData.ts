@@ -268,10 +268,10 @@ export const slidesData: SlideData[][] = [
   [
     {
       mediaUrl: "images/meplus.gif",
-      title: "MePlus",
-      subTitle: "Backend Architecture · OpenAI Lead",
+      title: "미플러스",
+      subTitle: "백엔드 설계 · OpenAI 담당",
       description:
-        "- Plan recommendation chatbot service\n- Established a baseline by comparing full prompt calls vs DB lookups\n- Targeting responses within 4 turns: succeeded in 29 out of 32 tests\n- Response time 32s -> 23s (-9s), tokens 7,500 -> 6,200\n- Automatically asks necessary follow-up questions via OpenAI Function Calling\n- Fast interactions with carousel button click inputs (Yes/No, etc.)",
+        "- 요금제 추천 챗봇 서비스\n- 프롬프트 전체 호출 vs DB 조회 비교로 베이스라인 수립\n- 4턴 내 응답 목표로 32회 테스트 중 29회 성공\n- 응답 시간 32초 -> 23초 (9초 단축), 토큰 7,500 -> 6,200\n- OpenAI Function Calling 기반 역질문으로 필요한 정보 자동 질의\n- 캐러셀 버튼(예/아니요 등) 클릭 입력으로 빠른 상호작용",
     },
   ],
 ];
@@ -535,13 +535,14 @@ export const slidesDataEN: SlideData[][] = [
         "- Learned to allocate resources effectively to meet tight deadlines\n- Understood the importance of user-centered product design\n- Focused on scalable development by prioritizing component reusability and flexibility",
     },
   ],
+
   [
     {
       mediaUrl: "images/meplus.gif",
-      title: "ミプラス",
-      subTitle: "バックエンド設計・OpenAI担当",
+      title: "MePlus",
+      subTitle: "Backend Architecture · OpenAI Lead",
       description:
-        "- 料金プラン推薦チャットボットサービス\n- プロンプトのフル呼び出しとDB参照の比較でベースラインを確立\n- 4ターン以内の応答を目標に、32回のテスト中29回成功\n- 応答時間 32秒 -> 23秒（9秒短縮）、トークン 7,500 -> 6,200\n- OpenAI Function Calling に基づく逆質問で必要情報を自動取得\n- カルーセルボタン（はい/いいえ等）のクリック入力で迅速なインタラクション",
+        "- Plan recommendation chatbot service\n- Established a baseline by comparing full prompt calls vs DB lookups\n- Targeting responses within 4 turns: succeeded in 29 out of 32 tests\n- Response time 32s -> 23s (-9s), tokens 7,500 -> 6,200\n- Automatically asks necessary follow-up questions via OpenAI Function Calling\n- Fast interactions with carousel button click inputs (Yes/No, etc.)",
     },
   ],
 ];
@@ -800,13 +801,14 @@ export const slidesDataJP: SlideData[][] = [
         "- スケジュール遵守のためのリソース配分および協業調整スキルの習得\n- ユーザー視点に立ったプロダクト設計の重要性を認識\n- 再利用可能なコンポーネント設計および拡張性を考慮した開発方式の理解",
     },
   ],
+
   [
     {
       mediaUrl: "images/meplus.gif",
-      title: "미플러스",
-      subTitle: "백엔드 설계 · OpenAI 담당",
+      title: "ミプラス",
+      subTitle: "バックエンド設計・OpenAI担当",
       description:
-        "- 요금제 추천 챗봇 서비스\n- 프롬프트 전체 호출 vs DB 조회 비교로 베이스라인 수립\n- 4턴 내 응답 목표로 32회 테스트 중 29회 성공\n- 응답 시간 32초 -> 23초 (9초 단축), 토큰 7,500 -> 6,200\n- OpenAI Function Calling 기반 역질문으로 필요한 정보 자동 질의\n- 캐러셀 버튼(예/아니요 등) 클릭 입력으로 빠른 상호작용",
+        "- 料金プラン推薦チャットボットサービス\n- プロンプトのフル呼び出しとDB参照の比較でベースラインを確立\n- 4ターン以内の応答を目標に、32回のテスト中29回成功\n- 応答時間 32秒 -> 23秒（9秒短縮）、トークン 7,500 -> 6,200\n- OpenAI Function Calling に基づく逆質問で必要情報を自動取得\n- カルーセルボタン（はい/いいえ等）のクリック入力で迅速なインタラクション",
     },
   ],
 ];
