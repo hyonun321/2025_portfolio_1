@@ -36,8 +36,6 @@ export const skillCardsTranslations = {
         paragraphs: [
           "- 트러블슈팅 발생 시 타임라인·원인·조치안을 즉시 문서화",
           "- 팀 위키/Notion에 사례를 자주 공유, 기술 공유를 즐김",
-          "- 6주간 기술 위키 30개 작성",
-          "- 개인 기술 블로그 운영",
         ],
       },
     },
